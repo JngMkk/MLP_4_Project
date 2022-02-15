@@ -8,6 +8,6 @@ def file_sort(file):
     df.reset_index(drop=True, inplace=True)
     df.to_csv(f'./data/{file}.csv')
 
-yrs = ['uni_2019', 'uni_2020', 'uni_2021']
+yrs = ['uni_freshman_2019', 'uni_freshman_2020', 'uni_freshman_2021']
 for yr in yrs:
     file_sort(yr)
