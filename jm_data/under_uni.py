@@ -5,4 +5,4 @@ datas = ['uni_freshman_2019', 'uni_freshman_2020', 'uni_freshman_2021']
 
 for data in datas:
     df = pd.read_csv(f'./data/{data}.csv', index_col=0)
-    df[df.iloc[:, [11]].values < 97].to_csv(f'./data/under_{data}')
+    df[df.iloc[:, [11]].values < 97].to_csv(f'./data/under_{data}.csv')
