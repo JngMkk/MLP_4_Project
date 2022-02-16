@@ -21,6 +21,8 @@ raw_univ = raw_univ.split()
 
 
 
+
+
 service = webdriver.chrome.service.Service('../drivers/chromedriver.exe')
 driver = webdriver.Chrome(service=service)
 # actionChains = ActionChains(driver)
@@ -100,6 +102,6 @@ loc_address_data = {'name': univ_name_list,
                     'latitude': latitude_list,
                     'longitude': longitude_list}
 
-loc_df = pd.DataFrame(loc_address_data)
-loc_df.to_csv('./data/location.csv')
+loc_df1 = pd.DataFrame(loc_address_data)
+loc_df1.to_csv('./data/location.csv')
 
