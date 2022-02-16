@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver import ActionChains
+from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 from time import sleep
 from geopy.geocoders import Nominatim
@@ -27,16 +28,19 @@ soup = BeautifulSoup(driver.page_source, 'html.parser')
 def find_loc(univ_name):
     driver.implicitly_wait(3)
     driver.get(url)
-    searchbox = driver.find_element_by_xpath('//*[@id="searchboxinput"]')
+    driver.maximize_window()
+    searchbox = driver.find_element(By.XPATH, '//*[@id="searchboxinput"]')
     searchbox.send_keys(univ_name)
-    search = driver.find_element_by_xpath('//*[@id="searchbox-searchbutton"]')
+    search = driver.find_element(By.XPATH, '//*[@id="searchbox-searchbutton"]')
     search.click()
     sleep(2)
     # loc = driver.find_element_by_xpath('/html/body/div[3]/div[3]/div[1]/ul/li[1]')
     # loc.click
-    loc = driver.find_element_by_xpath('/html/body/div[3]/div[9]/div[8]/div/div[1]/div/div/div[7]/div[1]/button/div[1]/div[2]/div[1]')
-    red_button = driver.find_element_by_xpath('/html/body/div[3]/div[3]/div[1]')
-    actionChains.context_click('/html/body/div[3]/div[3]/div[1]').perform()
+    ActionChains(driver)
+    loc = driver.find_element(By.XPATH, '/html/body/div[3]/div[9]/div[8]/div/div[1]/div/div/div[7]/div[1]/button/div[1]/div[2]/div[1]')
+    red_button = driver.find_element(By.XPATH, '/html/body/div[3]/div[3]/div[1]')
+    # actionChains.context_click('/html/body/div[3]/div[3]/div[1]').perform()
+    print(loc.text)
 
 
 
