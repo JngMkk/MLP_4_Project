@@ -8,6 +8,16 @@ def file_sort(file):
     df.reset_index(drop=True, inplace=True)
     df.to_csv(f'./data/{file}.csv')
 
-yrs = ['uni_freshman_2019', 'uni_freshman_2020', 'uni_freshman_2021']
-for yr in yrs:
-    file_sort(yr)
+def file_sort2(file):
+    df = pd.read_excel(f'./resources/uni_students_2019.xlsx', header=4)
+    df = df.iloc[:,[0,1,2,3,4,5,6,7,8,9,10,11,12]]
+    df.columns = ['기준연도', '학교종류', '설립구분', '지역', '상태', '학교', '학생정원', '학생모집정지인원', '총재학생', '정원내재학생', '정원외재학생', '재학생충원율[총재학생/(학생정원-정지인원)x100]', '정원내학생충원율[정원내재학생/(학생정원-정지인원)x100]']
+    df.to_csv(f'./data/{file}.csv')
+
+datas = ['uni_freshman_2019', 'uni_freshman_2020', 'uni_freshman_2021']
+for data in datas:
+    file_sort(data)
+
+datas = ['uni_students_2019', 'uni_students_2020', 'uni_students_2021']
+for data in datas:
+    file_sort2(data)
