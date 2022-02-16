@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px; 
+        }
+
+        a{  color: white;
+            text-decoration-line: none;
+        }
+        a:visited{
+            color : none;
+        }
+        a:hover{
+            font-weight: bold;
+        }
+        #groupName > span{
+            color : rgb(126, 105, 85);
+            font-weight: bold;
+            font-size : 20px;
+        }
+        li {
+            list-style-type: none;
+            margin: 1%;
+        }
+        #supSection {
+            max-width:100%;
+            padding-left : 25px;
+            height: 35px;
+            display: flex;
+            align-items : center;
+            justify-content: space-between;
+            background-color :rgb(236, 234, 230);
+        }
+
+        #subSection {
+            padding-left : 5%;
+            padding-right : 5%;
+            background-color : rgb(126, 105, 85);
+        }
+        #subSection a {
+            color : rgb(193, 177, 160);
+        }
+        #logLst {
+            height: 100%;
+            width: 30%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color : rgb(162, 154, 145);
+        }
+        #logLst li{
+            margin: 30px;
+            max-width: 100%;
+        }
+
+        #menuLst {
+            width : 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        
+
+        #main {
+            height: 1200px;
+        }
+        
+        #main {
+            padding: 3%;
+        }
+        #mainContent{
+            display: flex;
+            justify-content: space-between;
+        }
+        .content {
+            height : 300px;
+            border : 1px solid black;
+            width: 30%;
+        }
+        .content ul{
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        #footer {
+            color: white;
+            padding : 10px;
+            bottom: 0%;
+            background-color: rgb(39, 55, 69);
+        }
+        #footer> #copyright{
+            display: flex;
+            justify-content: column;
+        }
+    
+    </style>
+
+</head>
+
+
+<body>
+    <div id="header">
+        <div id="supSection">
+            <div id="groupName">
+                <span>6성급 호텔</span>
+            </div>
+            <ul id="logLst">
+                <li class="log" id="log_1"><a href="login.html">log</a></li>
+                <li class="log" id="log_2"><a href="signin.html">sign</a></li>
+                <li class="log" id="log_3"><a>LOG</a></li>
+                <li class="log" id="log_4"><a>LOG</a></li>
+            </ul>
+        </div>
+
+        <div id="subSection">
+            <ul id="menuLst">
+                <li class="menu" id="title_1"><a>Intro</a></li>
+                <li class="menu" id="title_2"><a>목차2</a></li>
+                <li class="menu" id="title_3"><a>목차3</a></li>
+                <li class="menu" id="title_4"><a>목차4</a></li>
+                <li class="menu" id="title_5"><a>목차5</a></li>
+                <li class="menu" id="title_6"><a>목차6</a></li>
+                <li class="menu" id="title_7"><a>Q&A</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">main
+        <div id="mainContent">
+            <div class="content">
+                <ul>
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <ul>
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <ul>
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                </ul>
+            </div>            
+        </div>
+    </div>
+    <div id="footer">
+        <div id="copySection"> <br>
+            <span>COPYRIGHT</span><br>
+            <ul id="copyLst">
+                <li>Lst1</li>
+                <li>Lst2</li>
+                <li>Lst3</li>
+                <li>Lst4</li>
+            </ul>
+        </div>
+        <hr> <br>
+        <div id="extraInfoSection">
+            <span>EXTRAINFO</span>
+            <ul id="extraLst">
+                <li>extraInfo1</li>
+                <li>extraInfo2</li>
+                <li>extraInfo3</li>
+                <li>extraInfo4</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
