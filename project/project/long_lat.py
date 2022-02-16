@@ -45,9 +45,9 @@ def find_loc(univ_name):
     # achains.context_click('/html/body/div[3]/div[3]/div[1]').perform()
     # loc = driver.find_element(By.XPATH, '/html/body/div[3]/div[3]/div[1]/ul/li[1]/div[3]/div[1]')
     address_text = address.text
-    with open('address.txt', 'a') as f:
-        f.write(f"{univ_name}: {address_text},")
-    # geocoding(address_text)
+    with open('address.txt', 'a', encoding='utf-8') as f:
+        f.write(f"{univ_name}: {address_text},\n")
+        # geocoding(address_text)
     sleep(3)
 
 
