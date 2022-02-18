@@ -33,7 +33,6 @@ def search(university, radius):
             culture_y.append(r['y'])
     df = pd.DataFrame([category, name, addr, distance, culture_x, culture_y]).T
     df.columns = ['카테고리', '건물명','도로명주소', '사이거리', 'x좌표', 'y좌표']
-    df.index.name = university
     return df
 
 # 반경 radius 내 기차역 목록
@@ -97,6 +96,8 @@ def bus(university, radius):
 
 def uni_bound(university, radius):
     df = pd.concat([search(university, radius), bus(university, radius), train(university, radius)])
+    df.reset_index(drop=True, inplace=True)
+    df.index.name = university
     km = str(int(radius / 1000)) + 'km'
     df.to_csv(f'./data/{university}반경{km}내시설.csv')
 
