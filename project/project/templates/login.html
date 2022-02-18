@@ -3,15 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>로그인</title>
+    <style>
+        #logintable{
+            width: 240px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        #lgnsubmit{
+            border: 1px solid transparent;
+            width: 250px;
+            height: 30px;
+            margin: 10px;
+        }
+        #textid, #textpw{
+            text-align: right;
+            width: 30px;
+        }
+        #loginid, #loginpw{
+            border: 1px solid black;
+            width: 180px;
+            height: 30px;
+        }
+        .textidpw{ text-align: right; }
+    </style>
 </head>
 <body>
     <form action="" method="post">
-        ID: <input type="text" name="userid">
-        </br>
-        비밀번호: <input type="text" name="mypassword">
-        </br>
-        <input type="button" value="회원가입" onclick="">
-        <input type="submit" value="로그인">
+        <table id="logintable">
+            <tr>
+                <td class="textidpw">아이디</td>
+                <td>
+                    <input type="text" name="userid" id="loginid">
+                </td>
+            </tr>
+            <tr>
+                <td class="textidpw">비밀번호</td>
+                <td>
+                    <input type="text" name="mypassword" id="loginpw">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" id="lgnsubmit" onclick="">로그인</button>
+                </td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>
