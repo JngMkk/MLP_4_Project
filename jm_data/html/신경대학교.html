@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_97de511e0b7648b1ba32fc86080df612 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_97de511e0b7648b1ba32fc86080df612" ></div>
+        
+</body>
+<script>    
+    
+            var map_97de511e0b7648b1ba32fc86080df612 = L.map(
+                "map_97de511e0b7648b1ba32fc86080df612",
+                {
+                    center: [37.2027597068537, 126.839513003484],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_47f8f83988ba439da1f3f46da38d8ced = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var marker_bb4988e77c894a9fb4623e01b88db8ba = L.marker(
+                [37.1987908048969, 126.828735133374],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_956496f2587f4e76bfb2f01235b41ba5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bb4988e77c894a9fb4623e01b88db8ba.setIcon(icon_956496f2587f4e76bfb2f01235b41ba5);
+        
+    
+            marker_bb4988e77c894a9fb4623e01b88db8ba.bindTooltip(
+                `<div>
+                     누림아트홀
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ea4008ae6c740d6add98d682bf476e4 = L.marker(
+                [37.1987934782177, 126.825626302124],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_9ba9d03d09e246f9860aa9440afaa661 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1ea4008ae6c740d6add98d682bf476e4.setIcon(icon_9ba9d03d09e246f9860aa9440afaa661);
+        
+    
+            marker_1ea4008ae6c740d6add98d682bf476e4.bindTooltip(
+                `<div>
+                     라인아트홀
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82bed8aa7a1149c1893ef7e0e82df72d = L.marker(
+                [37.2043935143274, 126.806481470405],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_7b14b4f7aa0b480a914a402785075ced = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_82bed8aa7a1149c1893ef7e0e82df72d.setIcon(icon_7b14b4f7aa0b480a914a402785075ced);
+        
+    
+            marker_82bed8aa7a1149c1893ef7e0e82df72d.bindTooltip(
+                `<div>
+                     룸비니문화원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79a792a18616422397cd212fc140f3ed = L.marker(
+                [37.1711764417387, 126.886695177758],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_5c9feb3ea6fc4c8db537464876d23a86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_79a792a18616422397cd212fc140f3ed.setIcon(icon_5c9feb3ea6fc4c8db537464876d23a86);
+        
+    
+            marker_79a792a18616422397cd212fc140f3ed.bindTooltip(
+                `<div>
+                     로얄엑스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ac5cd314f8a4908994d0367c7d51386 = L.marker(
+                [37.27378043066515, 126.83976827007923],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_ad1db77945614a678c9f43e26066f20c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2ac5cd314f8a4908994d0367c7d51386.setIcon(icon_ad1db77945614a678c9f43e26066f20c);
+        
+    
+            marker_2ac5cd314f8a4908994d0367c7d51386.bindTooltip(
+                `<div>
+                     안산갈대습지 환경생태관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9945384995e749759367656d6722c8d7 = L.marker(
+                [37.1263190901813, 126.89160092013],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_2d00822a78384fbba0b765f8a5536ac8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9945384995e749759367656d6722c8d7.setIcon(icon_2d00822a78384fbba0b765f8a5536ac8);
+        
+    
+            marker_9945384995e749759367656d6722c8d7.bindTooltip(
+                `<div>
+                     제암리3.1운동 순국기념관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e44f2a81b02b4c6b9e74485722573703 = L.marker(
+                [37.2858919879442, 126.833098285422],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_b6b66be7c49c4ebba9cec6ce2c71e365 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e44f2a81b02b4c6b9e74485722573703.setIcon(icon_b6b66be7c49c4ebba9cec6ce2c71e365);
+        
+    
+            marker_e44f2a81b02b4c6b9e74485722573703.bindTooltip(
+                `<div>
+                     코르디움
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ec4ec6b54844441b59533013b1c8a35 = L.marker(
+                [37.1693788454909, 126.93612707709],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_36db697462fb47f3bfe26bad799776ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1ec4ec6b54844441b59533013b1c8a35.setIcon(icon_36db697462fb47f3bfe26bad799776ee);
+        
+    
+            marker_1ec4ec6b54844441b59533013b1c8a35.bindTooltip(
+                `<div>
+                     서봉문화전시관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e417b3878f784c8dbf2bab3832c53960 = L.marker(
+                [37.1217188601691, 126.868990081908],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_7aa1efb4be524bdd959e1d2cd3fd61ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e417b3878f784c8dbf2bab3832c53960.setIcon(icon_7aa1efb4be524bdd959e1d2cd3fd61ef);
+        
+    
+            marker_e417b3878f784c8dbf2bab3832c53960.bindTooltip(
+                `<div>
+                     총회세계선교회 GMS선교본부 GMS선교박물관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_260b14ffa83440909f61c32257b06951 = L.marker(
+                [37.2194587527671, 126.949862094774],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_0a78bd4e733a4dbeaf4760de62a7c939 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_260b14ffa83440909f61c32257b06951.setIcon(icon_0a78bd4e733a4dbeaf4760de62a7c939);
+        
+    
+            marker_260b14ffa83440909f61c32257b06951.bindTooltip(
+                `<div>
+                     봉담문화의집
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0952e9c8f9b84a8fa91644f313540be3 = L.marker(
+                [37.20452753154094, 126.84767505160036],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_5b3ba6b55c6347ae91d55e4b384e0f46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0952e9c8f9b84a8fa91644f313540be3.setIcon(icon_5b3ba6b55c6347ae91d55e4b384e0f46);
+        
+    
+            marker_0952e9c8f9b84a8fa91644f313540be3.bindTooltip(
+                `<div>
+                     무봉산
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f03b13912151401fba4bec504b999cbe = L.marker(
+                [37.1921631599025, 126.829074474386],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_032ecbcda8d14146b713ba2559206d5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f03b13912151401fba4bec504b999cbe.setIcon(icon_032ecbcda8d14146b713ba2559206d5e);
+        
+    
+            marker_f03b13912151401fba4bec504b999cbe.bindTooltip(
+                `<div>
+                     함봉산
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5cac20b407c54ea9bc77af8a9fe02d77 = L.marker(
+                [37.2173657668588, 126.857891730167],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_590404aae09f43bc807bb49e1e0ceec8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5cac20b407c54ea9bc77af8a9fe02d77.setIcon(icon_590404aae09f43bc807bb49e1e0ceec8);
+        
+    
+            marker_5cac20b407c54ea9bc77af8a9fe02d77.bindTooltip(
+                `<div>
+                     양노저수지
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9be0155a2d344495a4218c2af12817e3 = L.marker(
+                [37.1953215908611, 126.86642562276],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_84993e5a1bc94bf7b23a8a016d47c855 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9be0155a2d344495a4218c2af12817e3.setIcon(icon_84993e5a1bc94bf7b23a8a016d47c855);
+        
+    
+            marker_9be0155a2d344495a4218c2af12817e3.bindTooltip(
+                `<div>
+                     장터저수지
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b4cee54b92344499f540a81bb181b5b = L.marker(
+                [37.2246179955768, 126.846804225867],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_5a2baea9999848e29f27bb04e00d3071 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7b4cee54b92344499f540a81bb181b5b.setIcon(icon_5a2baea9999848e29f27bb04e00d3071);
+        
+    
+            marker_7b4cee54b92344499f540a81bb181b5b.bindTooltip(
+                `<div>
+                     길식물원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a8d37fb25fd46aba6c691d76c57375d = L.marker(
+                [37.2225167376622, 126.843348260621],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_471bbce5a26d4a99936bf7780f9d3e74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7a8d37fb25fd46aba6c691d76c57375d.setIcon(icon_471bbce5a26d4a99936bf7780f9d3e74);
+        
+    
+            marker_7a8d37fb25fd46aba6c691d76c57375d.bindTooltip(
+                `<div>
+                     남양옹기
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c15c1087a4da4acd9b3c60c32f8cbfa0 = L.marker(
+                [37.2231907383259, 126.830910939979],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_53f74799d713409fb7520e3d6d1dba41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c15c1087a4da4acd9b3c60c32f8cbfa0.setIcon(icon_53f74799d713409fb7520e3d6d1dba41);
+        
+    
+            marker_c15c1087a4da4acd9b3c60c32f8cbfa0.bindTooltip(
+                `<div>
+                     삼부실골
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a865f59b3dd9483da1c8ea88ff9a9a04 = L.marker(
+                [37.2104591642586, 126.813081135947],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_dd2490e3154d4deaaf89c23a90caed7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a865f59b3dd9483da1c8ea88ff9a9a04.setIcon(icon_dd2490e3154d4deaaf89c23a90caed7e);
+        
+    
+            marker_a865f59b3dd9483da1c8ea88ff9a9a04.bindTooltip(
+                `<div>
+                     수직이앞들
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6fa058a445ad43c49d4c969070a2f4ca = L.marker(
+                [37.2233466164684, 126.853206744887],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_d26f863d0c69411180af5855e4f049fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6fa058a445ad43c49d4c969070a2f4ca.setIcon(icon_d26f863d0c69411180af5855e4f049fc);
+        
+    
+            marker_6fa058a445ad43c49d4c969070a2f4ca.bindTooltip(
+                `<div>
+                     방아다리골
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba758cbcc2c449de93d2cfaa90d1480a = L.marker(
+                [37.172328863965696, 126.86515432423754],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_9b45917603004213a038b6c7282e2b0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba758cbcc2c449de93d2cfaa90d1480a.setIcon(icon_9b45917603004213a038b6c7282e2b0b);
+        
+    
+            marker_ba758cbcc2c449de93d2cfaa90d1480a.bindTooltip(
+                `<div>
+                     대성저수지
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6f0180e454346caa86c60c5fddade73 = L.marker(
+                [37.2240873426759, 126.857689823714],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_00e3d46256cf4063aea2fe64fbf83e3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a6f0180e454346caa86c60c5fddade73.setIcon(icon_00e3d46256cf4063aea2fe64fbf83e3c);
+        
+    
+            marker_a6f0180e454346caa86c60c5fddade73.bindTooltip(
+                `<div>
+                     주연농원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67cce527bfa94683a485f7620aa4caaa = L.marker(
+                [37.1807509198579, 126.825703819644],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_ee98446446a04626bd2dd93b2aefd74c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_67cce527bfa94683a485f7620aa4caaa.setIcon(icon_ee98446446a04626bd2dd93b2aefd74c);
+        
+    
+            marker_67cce527bfa94683a485f7620aa4caaa.bindTooltip(
+                `<div>
+                     외마니골
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56d00db1d86d427e8a0534fef8f04f6d = L.marker(
+                [37.2377309729549, 126.8341331439],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_5cb08facef884b30b8beeb6626e5a3c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_56d00db1d86d427e8a0534fef8f04f6d.setIcon(icon_5cb08facef884b30b8beeb6626e5a3c5);
+        
+    
+            marker_56d00db1d86d427e8a0534fef8f04f6d.bindTooltip(
+                `<div>
+                     남전저수지
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5801971f5f8b4bbe82584bac0922d85a = L.marker(
+                [37.18956677745, 126.867413344279],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_59c63729e06a4a0d8f6138c89c335377 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5801971f5f8b4bbe82584bac0922d85a.setIcon(icon_59c63729e06a4a0d8f6138c89c335377);
+        
+    
+            marker_5801971f5f8b4bbe82584bac0922d85a.bindTooltip(
+                `<div>
+                     선두집골
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c499646797a4b8e9896aef322a5cc9e = L.marker(
+                [37.1810920711038, 126.857081334554],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_e9d590b6d8f54213bdd05ec67ab021cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0c499646797a4b8e9896aef322a5cc9e.setIcon(icon_e9d590b6d8f54213bdd05ec67ab021cc);
+        
+    
+            marker_0c499646797a4b8e9896aef322a5cc9e.bindTooltip(
+                `<div>
+                     밴송골
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a28a5ba7bb764fe29e26588af001a8ac = L.marker(
+                [37.2027597068537, 126.839513003484],
+                {}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+    
+            var icon_0435f8820c2f4318a608d3c38fae2d2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_a28a5ba7bb764fe29e26588af001a8ac.setIcon(icon_0435f8820c2f4318a608d3c38fae2d2f);
+        
+    
+            marker_a28a5ba7bb764fe29e26588af001a8ac.bindTooltip(
+                `<div>
+                     신경대학교
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7d7b7bc77e69479eaa7384bf12c10cb4 = L.circleMarker(
+                [37.2027597068537, 126.839513003484],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_97de511e0b7648b1ba32fc86080df612);
+        
+</script>
