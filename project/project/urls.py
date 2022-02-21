@@ -21,4 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('community/', views.community, name='community'),
+    #상동
+    path('pybo/', include('pybo.urls'))
 ]
