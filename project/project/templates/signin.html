@@ -3,21 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <title>회원가입</title>
+    <style>
+        body {
+            background-color: rgb(236, 234, 230);
+        }
+        h2{
+            text-align: center;
+            background-color : rgb(126, 105, 85);
+            color: rgb(236, 234, 230);
+            margin: 20px;
+            padding: 20px;
+         }
+        #signintable{
+            width: 210px;
+            margin: auto;
+            text-align: left;
+            font-weight: 500;
+            font-size: 15px;
+        }
+        #yy, #mm, #dd{
+            width: 65px;
+            height: 30px;
+            border: 1px solid gray;
+        }
+        td{ padding: 10px; }
+        input{
+            width: 210px;
+            height: 30px;
+            border: 1px solid gray;
+        }
+        button{
+            width: 105px;
+            height: 35px;
+            border: transparent;
+            background-color : rgb(126, 105, 85);
+            color:rgb(236, 234, 230)
+        }
+    </style>
 </head>
 <body>
+    <h2>회원가입</h2>
     <form action="/signin/" method="post">
-        성: <input type="text" name="lastname">
-        </br>
-        이름: <input type="text" name="firstname">
-        </br>
-        ID: <input type="text" name="userid">
-        </br>
-        비밀번호: <input type="text" name="mypassword">
-        </br>
-        e-mail: <input type="text" name="myemail">
-        </br>
-        <input type="button" id="cancel" value="취소" onclick="">
-        <input type="submit" value="가입완료">
+        <table id="signintable">
+            <tr>
+                <td>
+                    <div>아이디</div>
+                    <input type="text" id="userid" maxlength="15">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>비밀번호</div>
+                    <input type="password" id="mypassword">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>이메일</div>
+                    <input type="text" name="myemail">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>이름</div>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>생년월일</div>
+                    <div id="birthselect">
+                        <input type="text" id="yy" placeholder="년(4자)">
+                        <select id="mm" aria-placeholder="월">
+                            <option value>  월  </option>
+                            <option value="01">1</option>
+                            <option value="02">2</option>
+                            <option value="03">3</option>
+                            <option value="04">4</option>
+                            <option value="05">5</option>
+                            <option value="06">6</option>
+                            <option value="07">7</option>
+                            <option value="08">8</option>
+                            <option value="09">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <input type="text" id="dd" placeholder="일">
+                    </div>
+                </td>
+            </tr>
+            <tr id="signinbtn">
+                <td>
+                    <button type="reset" value="cancel" onclick="">취소</button>
+                    <button type="submit" value="submit">가입완료</button>
+                </td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>
