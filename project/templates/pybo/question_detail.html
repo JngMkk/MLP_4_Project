@@ -1,3 +1,4 @@
+{% extends 'base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,8 +28,8 @@
 <!--        <textarea name="content" id="content" rows="15"></textarea>-->
 <!--        <input type="submit" value="답변 등록">-->
 <!--    </form>-->
-
-<div class="containner my-3">
+{% block content %}
+<div class="container my-3">
     <h2 class="border-bottom py-2">{{ question.subject }}</h2>
     <div class="card my-3">
         <div class="card-body">
@@ -62,6 +63,19 @@
     <form action="{% url 'pybo:answer_create' question.id %}"
           method="post" class="my-3">
         {% csrf_token %}
+
+
+        {% if form.errors %}
+        <div class="alert alert-danger" role="alert">
+            {% for field in form %}
+                {% if field.errors %}
+                <strong>{{ field.label }}</strong>
+                {{ field.errors }}
+                {% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+
         <div class="form-group">
             <textarea name="content" id="content"
             class="form-control" rows="10"></textarea>
@@ -69,5 +83,7 @@
         <input type="submit" value="답변 등록" class="btn btn-primary">
     </form>
 </div>
+{% endblock %}
+
 </body>
 </html>

@@ -22,5 +22,13 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('community/', views.community, name='community'),
     #상동
-    path('pybo/', include('pybo.urls'))
+    path('pybo/', include('pybo.urls')),
+    path('login/', views.login, name='login'),
+    path('signin/', views.signin, name='signin'),
+    # path('accounts/', include('allauth.urls')),
+    path('accounts/', include('accounts.urls')),
+    path('signup/', views.signup, name='signup'),
+    path('logout/', views.logout, name='logout')
 ]
+
+
