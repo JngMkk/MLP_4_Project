@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_487014c85bb742da934620ce60118722 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_487014c85bb742da934620ce60118722" ></div>
+        
+</body>
+<script>    
+    
+            var map_487014c85bb742da934620ce60118722 = L.map(
+                "map_487014c85bb742da934620ce60118722",
+                {
+                    center: [36.03218084281317, 128.5095037634622],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    popup: "\ub300\uad6c\uc608\uc220\ub300\ud559\uad50",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_05996646cdfa453c8d1a55fa59db4317 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_487014c85bb742da934620ce60118722);
+        
+    
+            var circle_e9890007aeb74c4cb3d12b7efa17bef5 = L.circle(
+                [36.03218084281317, 128.5095037634622],
+                {"bubblingMouseEvents": true, "color": "#eb9e34", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_487014c85bb742da934620ce60118722);
+        
+    
+        var popup_d5c21ccc0e604e9cb74d3ef0a5ca0841 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64115a6ab2e34b2da7714cedbcc1cb0f = $(`<div id="html_64115a6ab2e34b2da7714cedbcc1cb0f" style="width: 100.0%; height: 100.0%;">대구예술대학교</div>`)[0];
+            popup_d5c21ccc0e604e9cb74d3ef0a5ca0841.setContent(html_64115a6ab2e34b2da7714cedbcc1cb0f);
+        
+
+        circle_e9890007aeb74c4cb3d12b7efa17bef5.bindPopup(popup_d5c21ccc0e604e9cb74d3ef0a5ca0841)
+        ;
+
+        
+    
+    
+            circle_e9890007aeb74c4cb3d12b7efa17bef5.bindTooltip(
+                `<div>
+                     500m
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9b0295fff63f455a8be743a5b2c72b90 = L.circleMarker(
+                [36.03218084281317, 128.5095037634622],
+                {"bubblingMouseEvents": true, "color": "#34ebc6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c634eb", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_487014c85bb742da934620ce60118722);
+        
+    
+        var popup_2dac2cd5188341eda0bc0a39ca8aa070 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f9ebeda2ad84ff3a532fff079e4e93f = $(`<div id="html_1f9ebeda2ad84ff3a532fff079e4e93f" style="width: 100.0%; height: 100.0%;">대구예술대학교</div>`)[0];
+            popup_2dac2cd5188341eda0bc0a39ca8aa070.setContent(html_1f9ebeda2ad84ff3a532fff079e4e93f);
+        
+
+        circle_marker_9b0295fff63f455a8be743a5b2c72b90.bindPopup(popup_2dac2cd5188341eda0bc0a39ca8aa070)
+        ;
+
+        
+    
+    
+            circle_marker_9b0295fff63f455a8be743a5b2c72b90.bindTooltip(
+                `<div>
+                     대구예술대학교
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc1e12452fce49b48c8c198665c4c095 = L.marker(
+                [36.03218084281317, 128.5095037634622],
+                {"iconColor": "red"}
+            ).addTo(map_487014c85bb742da934620ce60118722);
+        
+    
+            var marker_b5265efac30c4eefafc115453b3cbb10 = L.marker(
+                [36.034864963523, 128.512447861956],
+                {}
+            ).addTo(map_487014c85bb742da934620ce60118722);
+        
+    
+        var popup_2150ec08bfab43be9e6d883742aa10fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a2c8de08fa546deaa8c54424397462b = $(`<div id="html_5a2c8de08fa546deaa8c54424397462b" style="width: 100.0%; height: 100.0%;">('399.0m', '분식')</div>`)[0];
+            popup_2150ec08bfab43be9e6d883742aa10fa.setContent(html_5a2c8de08fa546deaa8c54424397462b);
+        
+
+        marker_b5265efac30c4eefafc115453b3cbb10.bindPopup(popup_2150ec08bfab43be9e6d883742aa10fa)
+        ;
+
+        
+    
+    
+            marker_b5265efac30c4eefafc115453b3cbb10.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb9f3ffc5ae747ffa9adfbf9f47141ee = L.marker(
+                [36.0375236107065, 128.516693076996],
+                {}
+            ).addTo(map_487014c85bb742da934620ce60118722);
+        
+    
+        var popup_4b06134a5e6f4211836938d068ff100a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81f27720b8524096bab07211ba87e692 = $(`<div id="html_81f27720b8524096bab07211ba87e692" style="width: 100.0%; height: 100.0%;">('878.0m', '건강/미용식품')</div>`)[0];
+            popup_4b06134a5e6f4211836938d068ff100a.setContent(html_81f27720b8524096bab07211ba87e692);
+        
+
+        marker_eb9f3ffc5ae747ffa9adfbf9f47141ee.bindPopup(popup_4b06134a5e6f4211836938d068ff100a)
+        ;
+
+        
+    
+    
+            marker_eb9f3ffc5ae747ffa9adfbf9f47141ee.bindTooltip(
+                `<div>
+                     소매
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_254b371f472f42d1a3ca3d61192aed55 = L.marker(
+                [36.0349467421466, 128.512293037436],
+                {}
+            ).addTo(map_487014c85bb742da934620ce60118722);
+        
+    
+        var popup_7cb9c26f3226433ea8e9887d77d066af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74f78f16f14645cd8be018619d34815d = $(`<div id="html_74f78f16f14645cd8be018619d34815d" style="width: 100.0%; height: 100.0%;">('396.9m', '양식')</div>`)[0];
+            popup_7cb9c26f3226433ea8e9887d77d066af.setContent(html_74f78f16f14645cd8be018619d34815d);
+        
+
+        marker_254b371f472f42d1a3ca3d61192aed55.bindPopup(popup_7cb9c26f3226433ea8e9887d77d066af)
+        ;
+
+        
+    
+    
+            marker_254b371f472f42d1a3ca3d61192aed55.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28773b57dd7344a1a9bb1764e2fd4bcf = L.marker(
+                [36.0408403027498, 128.516714743099],
+                {}
+            ).addTo(map_487014c85bb742da934620ce60118722);
+        
+    
+        var popup_7b0d8282f3db43808b4a938fe0be6299 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45ae237ae1634a4ab5f096216a823a34 = $(`<div id="html_45ae237ae1634a4ab5f096216a823a34" style="width: 100.0%; height: 100.0%;">('1160.8m', '닭/오리요리')</div>`)[0];
+            popup_7b0d8282f3db43808b4a938fe0be6299.setContent(html_45ae237ae1634a4ab5f096216a823a34);
+        
+
+        marker_28773b57dd7344a1a9bb1764e2fd4bcf.bindPopup(popup_7b0d8282f3db43808b4a938fe0be6299)
+        ;
+
+        
+    
+    
+            marker_28773b57dd7344a1a9bb1764e2fd4bcf.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6df6f8fd8df24c97bb5c9b49ab3540f2 = L.marker(
+                [36.0314314872128, 128.508098089447],
+                {}
+            ).addTo(map_487014c85bb742da934620ce60118722);
+        
+    
+        var popup_73a0197baf384cd4897278a7d29458e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2a0a32dbba24a0d85c52048c2614293 = $(`<div id="html_a2a0a32dbba24a0d85c52048c2614293" style="width: 100.0%; height: 100.0%;">('151.4m', '한식')</div>`)[0];
+            popup_73a0197baf384cd4897278a7d29458e7.setContent(html_a2a0a32dbba24a0d85c52048c2614293);
+        
+
+        marker_6df6f8fd8df24c97bb5c9b49ab3540f2.bindPopup(popup_73a0197baf384cd4897278a7d29458e7)
+        ;
+
+        
+    
+    
+            marker_6df6f8fd8df24c97bb5c9b49ab3540f2.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cad49f35288f47adbe4537dad16c189f = L.marker(
+                [36.0314314872128, 128.508098089447],
+                {}
+            ).addTo(map_487014c85bb742da934620ce60118722);
+        
+    
+        var popup_aa0674ea4f9b404d95fc1ddaee12d66c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5ca141916b6425d9f903d7a349413d4 = $(`<div id="html_e5ca141916b6425d9f903d7a349413d4" style="width: 100.0%; height: 100.0%;">('151.4m', '학원-보습교습입시')</div>`)[0];
+            popup_aa0674ea4f9b404d95fc1ddaee12d66c.setContent(html_e5ca141916b6425d9f903d7a349413d4);
+        
+
+        marker_cad49f35288f47adbe4537dad16c189f.bindPopup(popup_aa0674ea4f9b404d95fc1ddaee12d66c)
+        ;
+
+        
+    
+    
+            marker_cad49f35288f47adbe4537dad16c189f.bindTooltip(
+                `<div>
+                     학문/교육
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0b21b0d0d944a90be231865dd4a5fcf = L.marker(
+                [36.0336499558721, 128.51833225919],
+                {}
+            ).addTo(map_487014c85bb742da934620ce60118722);
+        
+    
+        var popup_517e8cd2f0494016a34ff5bb7f2f316c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7d52f01d25b4d2bb297821ea1f38c6a = $(`<div id="html_c7d52f01d25b4d2bb297821ea1f38c6a" style="width: 100.0%; height: 100.0%;">('810.5m', '가정/주방/인테리어')</div>`)[0];
+            popup_517e8cd2f0494016a34ff5bb7f2f316c.setContent(html_c7d52f01d25b4d2bb297821ea1f38c6a);
+        
+
+        marker_b0b21b0d0d944a90be231865dd4a5fcf.bindPopup(popup_517e8cd2f0494016a34ff5bb7f2f316c)
+        ;
+
+        
+    
+    
+            marker_b0b21b0d0d944a90be231865dd4a5fcf.bindTooltip(
+                `<div>
+                     소매
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5880c17646e14190bd123ee4b633eeb5 = L.marker(
+                [36.0314314872128, 128.508098089447],
+                {}
+            ).addTo(map_487014c85bb742da934620ce60118722);
+        
+    
+        var popup_a372db82a5334118b73f54f42eb26611 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e6c5887dfec4716b13fd9cfb3ab739f = $(`<div id="html_5e6c5887dfec4716b13fd9cfb3ab739f" style="width: 100.0%; height: 100.0%;">('151.4m', '음/식료품소매')</div>`)[0];
+            popup_a372db82a5334118b73f54f42eb26611.setContent(html_5e6c5887dfec4716b13fd9cfb3ab739f);
+        
+
+        marker_5880c17646e14190bd123ee4b633eeb5.bindPopup(popup_a372db82a5334118b73f54f42eb26611)
+        ;
+
+        
+    
+    
+            marker_5880c17646e14190bd123ee4b633eeb5.bindTooltip(
+                `<div>
+                     소매
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a5b0bfc46bf4bc5bff318ce7736fe2d = L.marker(
+                [36.0408403027498, 128.516714743099],
+                {}
+            ).addTo(map_487014c85bb742da934620ce60118722);
+        
+    
+        var popup_00ee597303df43a394a02f5df5643461 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30f27b5c8d8b4b4bbce0ff1e62771d7e = $(`<div id="html_30f27b5c8d8b4b4bbce0ff1e62771d7e" style="width: 100.0%; height: 100.0%;">('1160.8m', '닭/오리요리')</div>`)[0];
+            popup_00ee597303df43a394a02f5df5643461.setContent(html_30f27b5c8d8b4b4bbce0ff1e62771d7e);
+        
+
+        marker_1a5b0bfc46bf4bc5bff318ce7736fe2d.bindPopup(popup_00ee597303df43a394a02f5df5643461)
+        ;
+
+        
+    
+    
+            marker_1a5b0bfc46bf4bc5bff318ce7736fe2d.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

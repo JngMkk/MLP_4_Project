@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_85fd31c501c84d6dbfc0adb28e87be1a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_85fd31c501c84d6dbfc0adb28e87be1a" ></div>
+        
+</body>
+<script>    
+    
+            var map_85fd31c501c84d6dbfc0adb28e87be1a = L.map(
+                "map_85fd31c501c84d6dbfc0adb28e87be1a",
+                {
+                    center: [36.30549641819, 127.1964266219745],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    popup: "\uae08\uac15\ub300\ud559\uad50",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5b7963c97ff043e1a42ceb5711ed715f = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_85fd31c501c84d6dbfc0adb28e87be1a);
+        
+    
+            var circle_e7a6a54b03b1438ca36c98cf50a40bfd = L.circle(
+                [36.30549641819, 127.1964266219745],
+                {"bubblingMouseEvents": true, "color": "#eb9e34", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_85fd31c501c84d6dbfc0adb28e87be1a);
+        
+    
+        var popup_d67af33acc08429d81e37c945c8efec0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fbd8550b17d4b74b3f7b69ac6a573c7 = $(`<div id="html_0fbd8550b17d4b74b3f7b69ac6a573c7" style="width: 100.0%; height: 100.0%;">금강대학교</div>`)[0];
+            popup_d67af33acc08429d81e37c945c8efec0.setContent(html_0fbd8550b17d4b74b3f7b69ac6a573c7);
+        
+
+        circle_e7a6a54b03b1438ca36c98cf50a40bfd.bindPopup(popup_d67af33acc08429d81e37c945c8efec0)
+        ;
+
+        
+    
+    
+            circle_e7a6a54b03b1438ca36c98cf50a40bfd.bindTooltip(
+                `<div>
+                     500m
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c3e7e9b0da28485eb5b52f1adbfc8084 = L.circleMarker(
+                [36.30549641819, 127.1964266219745],
+                {"bubblingMouseEvents": true, "color": "#34ebc6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c634eb", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_85fd31c501c84d6dbfc0adb28e87be1a);
+        
+    
+        var popup_aed8ea22f49c40f4baa0b7c499157eb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9086c28080664504b5f37a6cde9fcc26 = $(`<div id="html_9086c28080664504b5f37a6cde9fcc26" style="width: 100.0%; height: 100.0%;">금강대학교</div>`)[0];
+            popup_aed8ea22f49c40f4baa0b7c499157eb2.setContent(html_9086c28080664504b5f37a6cde9fcc26);
+        
+
+        circle_marker_c3e7e9b0da28485eb5b52f1adbfc8084.bindPopup(popup_aed8ea22f49c40f4baa0b7c499157eb2)
+        ;
+
+        
+    
+    
+            circle_marker_c3e7e9b0da28485eb5b52f1adbfc8084.bindTooltip(
+                `<div>
+                     금강대학교
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c09f6bcb3db4b0ea168c32432c558b7 = L.marker(
+                [36.30549641819, 127.1964266219745],
+                {"iconColor": "red"}
+            ).addTo(map_85fd31c501c84d6dbfc0adb28e87be1a);
+        
+    
+            var marker_e38e571269ef49788a1cf20bfbbddaef = L.marker(
+                [36.3068191317902, 127.189714424272],
+                {}
+            ).addTo(map_85fd31c501c84d6dbfc0adb28e87be1a);
+        
+    
+        var popup_da2421c3be8a4040aebd171542e6acfb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb567739618a4c139df09a46ebeb0893 = $(`<div id="html_fb567739618a4c139df09a46ebeb0893" style="width: 100.0%; height: 100.0%;">('619.2m', '종합소매점')</div>`)[0];
+            popup_da2421c3be8a4040aebd171542e6acfb.setContent(html_fb567739618a4c139df09a46ebeb0893);
+        
+
+        marker_e38e571269ef49788a1cf20bfbbddaef.bindPopup(popup_da2421c3be8a4040aebd171542e6acfb)
+        ;
+
+        
+    
+    
+            marker_e38e571269ef49788a1cf20bfbbddaef.bindTooltip(
+                `<div>
+                     소매
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9419409c4eaf430cb5712fd4891686e5 = L.marker(
+                [36.3068191317902, 127.189714424272],
+                {}
+            ).addTo(map_85fd31c501c84d6dbfc0adb28e87be1a);
+        
+    
+        var popup_e3705af6904a4df78355e5a13169c08e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9451972b858443ef9f906a8557b65e75 = $(`<div id="html_9451972b858443ef9f906a8557b65e75" style="width: 100.0%; height: 100.0%;">('619.2m', '커피점/카페')</div>`)[0];
+            popup_e3705af6904a4df78355e5a13169c08e.setContent(html_9451972b858443ef9f906a8557b65e75);
+        
+
+        marker_9419409c4eaf430cb5712fd4891686e5.bindPopup(popup_e3705af6904a4df78355e5a13169c08e)
+        ;
+
+        
+    
+    
+            marker_9419409c4eaf430cb5712fd4891686e5.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33889bd90b574282bab2f31f39934ddf = L.marker(
+                [36.2960265731572, 127.187699573617],
+                {}
+            ).addTo(map_85fd31c501c84d6dbfc0adb28e87be1a);
+        
+    
+        var popup_c1e079f3b3c04ccd8341d630a4ff6675 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d56ac8200fa24afaba3ac83b4cbe52d7 = $(`<div id="html_d56ac8200fa24afaba3ac83b4cbe52d7" style="width: 100.0%; height: 100.0%;">('1311.7m', '음/식료품소매')</div>`)[0];
+            popup_c1e079f3b3c04ccd8341d630a4ff6675.setContent(html_d56ac8200fa24afaba3ac83b4cbe52d7);
+        
+
+        marker_33889bd90b574282bab2f31f39934ddf.bindPopup(popup_c1e079f3b3c04ccd8341d630a4ff6675)
+        ;
+
+        
+    
+    
+            marker_33889bd90b574282bab2f31f39934ddf.bindTooltip(
+                `<div>
+                     소매
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb7e9db1b661464083381c50f9fba17d = L.marker(
+                [36.3186717846168, 127.188578332336],
+                {}
+            ).addTo(map_85fd31c501c84d6dbfc0adb28e87be1a);
+        
+    
+        var popup_dab772d570d9419e8af15770b9a501dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ef2dfd8558b46f1844c9068a4553c19 = $(`<div id="html_4ef2dfd8558b46f1844c9068a4553c19" style="width: 100.0%; height: 100.0%;">('1625.1m', '도서관/독서실')</div>`)[0];
+            popup_dab772d570d9419e8af15770b9a501dd.setContent(html_4ef2dfd8558b46f1844c9068a4553c19);
+        
+
+        marker_cb7e9db1b661464083381c50f9fba17d.bindPopup(popup_dab772d570d9419e8af15770b9a501dd)
+        ;
+
+        
+    
+    
+            marker_cb7e9db1b661464083381c50f9fba17d.bindTooltip(
+                `<div>
+                     학문/교육
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b295ae5e1729473fb0f49257f963a561 = L.marker(
+                [36.3090169944701, 127.190872019916],
+                {}
+            ).addTo(map_85fd31c501c84d6dbfc0adb28e87be1a);
+        
+    
+        var popup_ec4080216521448591927afb9a0d7d71 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0a1f92024b8460488b3a3c1aaa81127 = $(`<div id="html_f0a1f92024b8460488b3a3c1aaa81127" style="width: 100.0%; height: 100.0%;">('633.2m', '선물/팬시/기념품')</div>`)[0];
+            popup_ec4080216521448591927afb9a0d7d71.setContent(html_f0a1f92024b8460488b3a3c1aaa81127);
+        
+
+        marker_b295ae5e1729473fb0f49257f963a561.bindPopup(popup_ec4080216521448591927afb9a0d7d71)
+        ;
+
+        
+    
+    
+            marker_b295ae5e1729473fb0f49257f963a561.bindTooltip(
+                `<div>
+                     소매
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
