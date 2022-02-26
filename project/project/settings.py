@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'accounts',
     'bootstrap4',
     # 'allauth.socialaccount',
+    'pybo1.apps.Pybo1Config'
 ]
 
 MIDDLEWARE = [

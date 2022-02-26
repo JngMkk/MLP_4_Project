@@ -44,24 +44,12 @@ def find_address(univ_name):
     search = driver.find_element(By.XPATH, '//*[@id="searchbox-searchbutton"]')
     search.click()
     sleep(2)
-    # loc = driver.find_element_by_xpath('/html/body/div[3]/div[3]/div[1]/ul/li[1]')
-    # loc.click
     address = driver.find_element(By.XPATH, '/html/body/div[3]/div[9]/div[8]/div/div[1]/div/div/div[7]/div[1]/button/div[1]/div[2]/div[1]')
     pyautogui.moveTo(1166, 548)
     pyautogui.click(button='right')
     loc = driver.find_element(By.XPATH, '/html/body/div[3]/div[3]/div[1]/ul/li[1]/div[3]/div[1]')
     print(type(loc.text), loc.text)
-    # achains = ActionChains(driver)
-    # achains.context_click()
-    # red_button = driver.find_element(By.XPATH, '/html/body/div[3]/div[3]/div[1]')
-    # achains.move_to_element(red_button).perform()
-    # sleep(2)
-    # achains.context_click('/html/body/div[3]/div[3]/div[1]').perform()
-    # loc = driver.find_element(By.XPATH, '/html/body/div[3]/div[3]/div[1]/ul/li[1]/div[3]/div[1]')
     address_text = address.text
-    # with open('address.txt', 'a', encoding='utf-8') as f:
-    #     f.write(f"{univ_name}: {address_text},\n")
-        # geocoding(address_text)
     sleep(3)
 
     univ_name_list.append(univ_name)
@@ -91,11 +79,6 @@ def find_address(univ_name):
 
 for i in range(len(raw_univ)):
     find_address(raw_univ[i])
-
-# print(univ_name_list)
-# print(address_list)
-# print(latitude_list)
-# print(longitude_list)
 
 loc_address_data = {'name': univ_name_list,
                     'address': address_list,

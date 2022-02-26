@@ -28,7 +28,8 @@ urlpatterns = [
     # path('accounts/', include('allauth.urls')),
     path('accounts/', include('accounts.urls')),
     path('signup/', views.signup, name='signup'),
-    path('logout/', views.logout, name='logout')
+    path('logout/', views.logout, name='logout'),
+    path('pybo1/', include('pybo1.urls')),
 ]
 
 
