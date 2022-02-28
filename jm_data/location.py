@@ -6,7 +6,7 @@ import requests
 uni_df = pd.read_csv('./data/location.csv', encoding='UTF-8', index_col=0)
 
 url = 'https://dapi.kakao.com/v2/local/geo/coord2regioncode.json'
-headers = {"Authorization" : "KakaoAK e888bb19dc37d394e91822fbef88d445"}
+headers = {"Authorization" : "KakaoAK "}
 uni = []
 dong = []
 for i, row in uni_df.iterrows():

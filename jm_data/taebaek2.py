@@ -15,7 +15,7 @@ uni_df = pd.read_csv('./data/location.csv', index_col=0)
 dff = pd.read_csv('./data/강원관광대학교반경내시설.csv', index_col = 0)
 
 url = 'https://dapi.kakao.com/v2/local/search/keyword.json'
-headers = {"Authorization" : "KakaoAK e888bb19dc37d394e91822fbef88d445"}
+headers = {"Authorization" : "KakaoAK "}
 x = []
 y = []
 loc = []

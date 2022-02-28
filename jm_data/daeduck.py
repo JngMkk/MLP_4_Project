@@ -4,7 +4,7 @@ import folium
 
 df = pd.read_csv('./data/location.csv', index_col=0)
 
-url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={df['y좌표'][6]}%2C{df['x좌표'][6]}&radius=5000&keyword=아파트&language=ko&key=AIzaSyBmVPfeAjlTgPexi9Ezv_bY_t1fvu8arNw"
+url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={df['y좌표'][6]}%2C{df['x좌표'][6]}&radius=5000&keyword=아파트&language=ko&key="
 payload={}
 headers = {}
 response = requests.request("GET", url, headers=headers, data=payload)
@@ -19,7 +19,7 @@ for r in result:
     lng.append(r['geometry']['location']['lng'])
 
 for _ in range(20):
-    url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={df['y좌표'][6]}%2C{df['x좌표'][6]}&pagetoken={npt}&radius=5000&keyword=아파트&language=ko&key=AIzaSyBmVPfeAjlTgPexi9Ezv_bY_t1fvu8arNw"
+    url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={df['y좌표'][6]}%2C{df['x좌표'][6]}&pagetoken={npt}&radius=5000&keyword=아파트&language=ko&key="
     payload={}
     headers = {}
     response = requests.request("GET", url, headers=headers, data=payload)
@@ -37,7 +37,7 @@ for _ in range(20):
             lng.append(r['geometry']['location']['lng'])
         break
 
-url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={df['y좌표'][6]}%2C{df['x좌표'][6]}&radius=5000&keyword=연구&language=ko&key=AIzaSyBmVPfeAjlTgPexi9Ezv_bY_t1fvu8arNw"
+url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={df['y좌표'][6]}%2C{df['x좌표'][6]}&radius=5000&keyword=연구&language=ko&key="
 
 payload={}
 headers = {}
@@ -55,7 +55,7 @@ for r in result:
     lng_2.append(r['geometry']['location']['lng'])
 
 for _ in range(20):
-    url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={df['y좌표'][6]}%2C{df['x좌표'][6]}&pagetoken={npt}&radius=5000&keyword=아파트&language=ko&key=AIzaSyBmVPfeAjlTgPexi9Ezv_bY_t1fvu8arNw"
+    url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={df['y좌표'][6]}%2C{df['x좌표'][6]}&pagetoken={npt}&radius=5000&keyword=아파트&language=ko&key="
     payload={}
     headers = {}
     response = requests.request("GET", url, headers=headers, data=payload)
