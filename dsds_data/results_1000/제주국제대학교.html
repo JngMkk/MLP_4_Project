@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b102cad6174645bdb73ec8b18b603b56 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b102cad6174645bdb73ec8b18b603b56" ></div>
+        
+</body>
+<script>    
+    
+            var map_b102cad6174645bdb73ec8b18b603b56 = L.map(
+                "map_b102cad6174645bdb73ec8b18b603b56",
+                {
+                    center: [33.441256456248624, 126.57013453482568],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6973b2ef337f4633b94720006a5b682d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b102cad6174645bdb73ec8b18b603b56);
+        
+    
+            var circle_b48f674cd5c046289146b746a863196a = L.circle(
+                [33.441256456248624, 126.57013453482568],
+                {"bubblingMouseEvents": true, "color": "#eb9e34", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1500, "stroke": true, "weight": 3}
+            ).addTo(map_b102cad6174645bdb73ec8b18b603b56);
+        
+    
+        var popup_d76192d5ec984570b190cef4a806eb57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e7ff5146f1b442e9fcaab0597539581 = $(`<div id="html_5e7ff5146f1b442e9fcaab0597539581" style="width: 100.0%; height: 100.0%;">땀나실걸요?</div>`)[0];
+            popup_d76192d5ec984570b190cef4a806eb57.setContent(html_5e7ff5146f1b442e9fcaab0597539581);
+        
+
+        circle_b48f674cd5c046289146b746a863196a.bindPopup(popup_d76192d5ec984570b190cef4a806eb57)
+        ;
+
+        
+    
+    
+            circle_b48f674cd5c046289146b746a863196a.bindTooltip(
+                `<div>
+                     1.5km
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b02706d33ddf469893399e1e5e550120 = L.circle(
+                [33.441256456248624, 126.57013453482568],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_b102cad6174645bdb73ec8b18b603b56);
+        
+    
+        var popup_af88cd60cf08413fba0ed4f87b5637b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7ba5c42fe8c4c1aae0d1355a306afd8 = $(`<div id="html_e7ba5c42fe8c4c1aae0d1355a306afd8" style="width: 100.0%; height: 100.0%;">걸어갈 수 있습니다!!</div>`)[0];
+            popup_af88cd60cf08413fba0ed4f87b5637b6.setContent(html_e7ba5c42fe8c4c1aae0d1355a306afd8);
+        
+
+        circle_b02706d33ddf469893399e1e5e550120.bindPopup(popup_af88cd60cf08413fba0ed4f87b5637b6)
+        ;
+
+        
+    
+    
+            circle_b02706d33ddf469893399e1e5e550120.bindTooltip(
+                `<div>
+                     1km
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5de5cb92957d4736a4975974b7654006 = L.circle(
+                [33.441256456248624, 126.57013453482568],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_b102cad6174645bdb73ec8b18b603b56);
+        
+    
+        var popup_69623e8164054db6ad62910e419697e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2aad152cad948949f8111539ec03752 = $(`<div id="html_a2aad152cad948949f8111539ec03752" style="width: 100.0%; height: 100.0%;">모든 사업체를 확인하세요!</div>`)[0];
+            popup_69623e8164054db6ad62910e419697e0.setContent(html_a2aad152cad948949f8111539ec03752);
+        
+
+        circle_5de5cb92957d4736a4975974b7654006.bindPopup(popup_69623e8164054db6ad62910e419697e0)
+        ;
+
+        
+    
+    
+            circle_5de5cb92957d4736a4975974b7654006.bindTooltip(
+                `<div>
+                     1000m 이내
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2b38254760154b1b8811717ce5aed54b = L.circleMarker(
+                [33.441256456248624, 126.57013453482568],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_b102cad6174645bdb73ec8b18b603b56);
+        
+    
+        var popup_d438433602544b8aaf63fbc10aa18e9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_baaee00adca7493880767870c2780d06 = $(`<div id="html_baaee00adca7493880767870c2780d06" style="width: 100.0%; height: 100.0%;">제주국제대학교</div>`)[0];
+            popup_d438433602544b8aaf63fbc10aa18e9f.setContent(html_baaee00adca7493880767870c2780d06);
+        
+
+        circle_marker_2b38254760154b1b8811717ce5aed54b.bindPopup(popup_d438433602544b8aaf63fbc10aa18e9f)
+        ;
+
+        
+    
+    
+            circle_marker_2b38254760154b1b8811717ce5aed54b.bindTooltip(
+                `<div>
+                     제주국제대학교
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02abd91edfe44722973265ece0e6a0bc = L.marker(
+                [33.441256456248624, 126.57013453482568],
+                {}
+            ).addTo(map_b102cad6174645bdb73ec8b18b603b56);
+        
+    
+            var marker_cluster_a44d42cec9f842e6848c6a5098e2e901 = L.markerClusterGroup(
+                {}
+            );
+            map_b102cad6174645bdb73ec8b18b603b56.addLayer(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+            var marker_ebfdadfaa46040cba2148b89ebb4e822 = L.marker(
+                [33.4405401933652, 126.578974296635],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_3b509f734d0943c7b7d65f368da7f86c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2079eaa6099244ea948a53085d3eeb40 = $(`<div id="html_2079eaa6099244ea948a53085d3eeb40" style="width: 100.0%; height: 100.0%;">상가업소번호                        24577582 상호명                            영평상동마을회 지점명                                NaN 상권업종대분류코드                            D 상권업종대분류명                            소매 상권업종중분류코드                          D03 상권업종중분류명                         종합소매점 상권업종소분류코드                       D03A02 상권업종소분류명                          수퍼마켓 표준산업분류코드                        G47121 표준산업분류명                           슈퍼마켓 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011013600.0 법정동명                               영평동 지번코드               5011013600122610000 대지구분코드                               1 대지구분명                               대지 지번본번지                             2261 지번부번지                              NaN 지번주소              제주특별자치도 제주시 영평동 2261 도로명코드                     501103020004 도로명                   제주특별자치도 제주시 516로 건물본번지                             2810 건물부번지                             31.0 건물관리번호       5011013600122610000062734 건물명                               양지공원 도로명주소         제주특별자치도 제주시 516로 2810-31 구우편번호                         690140.0 신우편번호                          63309.0 동정보                                NaN 층정보                                NaN 호정보                                NaN 경도                          126.578974 위도                            33.44054 Name: 1034, dtype: object</div>`)[0];
+            popup_3b509f734d0943c7b7d65f368da7f86c.setContent(html_2079eaa6099244ea948a53085d3eeb40);
+        
+
+        marker_ebfdadfaa46040cba2148b89ebb4e822.bindPopup(popup_3b509f734d0943c7b7d65f368da7f86c)
+        ;
+
+        
+    
+    
+            marker_ebfdadfaa46040cba2148b89ebb4e822.bindTooltip(
+                `<div>
+                     824.1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40dd967151f34764964ac2e1a93a3e33 = L.marker(
+                [33.4405401933652, 126.578974296635],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_cc3a1df6375c4becb6b3a3f8f205305c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b83c9fd09bd3436fa24b3b0b7247012f = $(`<div id="html_b83c9fd09bd3436fa24b3b0b7247012f" style="width: 100.0%; height: 100.0%;">상가업소번호                        12088354 상호명                               양지공원 지점명                                NaN 상권업종대분류코드                            F 상권업종대분류명                         생활서비스 상권업종중분류코드                          F18 상권업종중분류명                         장례/묘지 상권업종소분류코드                       F18A02 상권업종소분류명                       묘지관리-종합 표준산업분류코드                        S96922 표준산업분류명                 화장, 묘지분양 및 관리업 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011013600.0 법정동명                               영평동 지번코드               5011013600122610000 대지구분코드                               1 대지구분명                               대지 지번본번지                             2261 지번부번지                              NaN 지번주소              제주특별자치도 제주시 영평동 2261 도로명코드                     501103020004 도로명                   제주특별자치도 제주시 516로 건물본번지                             2810 건물부번지                             31.0 건물관리번호       5011013600122610000062734 건물명                               양지공원 도로명주소         제주특별자치도 제주시 516로 2810-31 구우편번호                         690140.0 신우편번호                          63309.0 동정보                                NaN 층정보                                1.0 호정보                                NaN 경도                          126.578974 위도                            33.44054 Name: 3122, dtype: object</div>`)[0];
+            popup_cc3a1df6375c4becb6b3a3f8f205305c.setContent(html_b83c9fd09bd3436fa24b3b0b7247012f);
+        
+
+        marker_40dd967151f34764964ac2e1a93a3e33.bindPopup(popup_cc3a1df6375c4becb6b3a3f8f205305c)
+        ;
+
+        
+    
+    
+            marker_40dd967151f34764964ac2e1a93a3e33.bindTooltip(
+                `<div>
+                     824.1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3ed36d652cb47278f22a3397f42372a = L.marker(
+                [33.4471790860129, 126.569842730846],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_ee152b90a1d24b5f8fec8e2e64e855ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bb1da6f6e5245eea4794d97d5e26613 = $(`<div id="html_6bb1da6f6e5245eea4794d97d5e26613" style="width: 100.0%; height: 100.0%;">상가업소번호                        28456332 상호명                       제주보듬이나눔이어린이집 지점명                                NaN 상권업종대분류코드                            R 상권업종대분류명                         학문/교육 상권업종중분류코드                          R08 상권업종중분류명                          유아교육 상권업종소분류코드                       R08A02 상권업종소분류명                          어린이집 표준산업분류코드                        Q87210 표준산업분류명                       보육시설 운영업 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011013600.0 법정동명                               영평동 지번코드               5011013600121880001 대지구분코드                               1 대지구분명                               대지 지번본번지                             2188 지번부번지                              1.0 지번주소            제주특별자치도 제주시 영평동 2188-1 도로명코드                     501104849196 도로명                  제주특별자치도 제주시 첨단로8길 건물본번지                               17 건물부번지                              NaN 건물관리번호       5011013600121880001000001 건물명                                NaN 도로명주소             제주특별자치도 제주시 첨단로8길 17 구우편번호                         690140.0 신우편번호                          63309.0 동정보                                  1 층정보                                NaN 호정보                                NaN 경도                          126.569843 위도                           33.447179 Name: 3726, dtype: object</div>`)[0];
+            popup_ee152b90a1d24b5f8fec8e2e64e855ed.setContent(html_6bb1da6f6e5245eea4794d97d5e26613);
+        
+
+        marker_c3ed36d652cb47278f22a3397f42372a.bindPopup(popup_ee152b90a1d24b5f8fec8e2e64e855ed)
+        ;
+
+        
+    
+    
+            marker_c3ed36d652cb47278f22a3397f42372a.bindTooltip(
+                `<div>
+                     659.1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_663393df50224d21bcdc23edfcee1d0e = L.marker(
+                [33.4427617717759, 126.569882962532],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_dea7f55b76eb4bbaa638697503619655 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f52f8ffd03042d4b3f14b3d778d940d = $(`<div id="html_4f52f8ffd03042d4b3f14b3d778d940d" style="width: 100.0%; height: 100.0%;">상가업소번호                        23748442 상호명                            제이에이치교육 지점명                                NaN 상권업종대분류코드                            R 상권업종대분류명                         학문/교육 상권업종중분류코드                          R04 상권업종중분류명                         학원-어학 상권업종소분류코드                       R04A01 상권업종소분류명                     학원-외국어/어학 표준산업분류코드                        P85502 표준산업분류명                          외국어학원 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011013600.0 법정동명                               영평동 지번코드               5011013600122350000 대지구분코드                               1 대지구분명                               대지 지번본번지                             2235 지번부번지                              NaN 지번주소              제주특별자치도 제주시 영평동 2235 도로명코드                     501103020004 도로명                   제주특별자치도 제주시 516로 건물본번지                             2870 건물부번지                              NaN 건물관리번호       5011013600122350000048515 건물명                                NaN 도로명주소            제주특별자치도 제주시 516로 2870 구우편번호                         690714.0 신우편번호                          63309.0 동정보                                NaN 층정보                                2.0 호정보                                NaN 경도                          126.569883 위도                           33.442762 Name: 14103, dtype: object</div>`)[0];
+            popup_dea7f55b76eb4bbaa638697503619655.setContent(html_4f52f8ffd03042d4b3f14b3d778d940d);
+        
+
+        marker_663393df50224d21bcdc23edfcee1d0e.bindPopup(popup_dea7f55b76eb4bbaa638697503619655)
+        ;
+
+        
+    
+    
+            marker_663393df50224d21bcdc23edfcee1d0e.bindTooltip(
+                `<div>
+                     169.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e817ac42a1ad45e398fa82f4035f6b44 = L.marker(
+                [33.4476215069257, 126.567555435061],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_89d6f83c2550419a98e24e7893d8c497 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18f684829a88412ea63ca097a175abb5 = $(`<div id="html_18f684829a88412ea63ca097a175abb5" style="width: 100.0%; height: 100.0%;">상가업소번호                        16962081 상호명                                 CU 지점명                          제주대첨단캠퍼스점 상권업종대분류코드                            D 상권업종대분류명                            소매 상권업종중분류코드                          D03 상권업종중분류명                         종합소매점 상권업종소분류코드                       D03A01 상권업종소분류명                           편의점 표준산업분류코드                        G47122 표준산업분류명                        체인화 편의점 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011011700.0 법정동명                              아라일동 지번코드               5011011700130050003 대지구분코드                               1 대지구분명                               대지 지번본번지                             3005 지번부번지                              3.0 지번주소           제주특별자치도 제주시 아라일동 3005-3 도로명코드                     501104849196 도로명                  제주특별자치도 제주시 첨단로8길 건물본번지                               36 건물부번지                              NaN 건물관리번호       5011011700130050003000001 건물명                                NaN 도로명주소             제주특별자치도 제주시 첨단로8길 36 구우편번호                         690121.0 신우편번호                          63243.0 동정보                                NaN 층정보                                NaN 호정보                                NaN 경도                          126.567555 위도                           33.447622 Name: 15859, dtype: object</div>`)[0];
+            popup_89d6f83c2550419a98e24e7893d8c497.setContent(html_18f684829a88412ea63ca097a175abb5);
+        
+
+        marker_e817ac42a1ad45e398fa82f4035f6b44.bindPopup(popup_89d6f83c2550419a98e24e7893d8c497)
+        ;
+
+        
+    
+    
+            marker_e817ac42a1ad45e398fa82f4035f6b44.bindTooltip(
+                `<div>
+                     747.1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_092c1dc3a3074fd29bad2c0be791744d = L.marker(
+                [33.4405401933652, 126.578974296635],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_be17e93ecfef4350b713938646cb4b75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2eb290e76c614ce78c41646f4b40dc2b = $(`<div id="html_2eb290e76c614ce78c41646f4b40dc2b" style="width: 100.0%; height: 100.0%;">상가업소번호                        17052873 상호명                          영평가시나물마을회 지점명                                NaN 상권업종대분류코드                            Q 상권업종대분류명                            음식 상권업종중분류코드                          Q01 상권업종중분류명                            한식 상권업종소분류코드                       Q01A01 상권업종소분류명                     한식/백반/한정식 표준산업분류코드                        I56111 표준산업분류명                        한식 음식점업 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011013600.0 법정동명                               영평동 지번코드               5011013600122610000 대지구분코드                               1 대지구분명                               대지 지번본번지                             2261 지번부번지                              NaN 지번주소              제주특별자치도 제주시 영평동 2261 도로명코드                     501103020004 도로명                   제주특별자치도 제주시 516로 건물본번지                             2810 건물부번지                             31.0 건물관리번호       5011013600122610000062734 건물명                               양지공원 도로명주소         제주특별자치도 제주시 516로 2810-31 구우편번호                         690140.0 신우편번호                          63309.0 동정보                                NaN 층정보                                NaN 호정보                                NaN 경도                          126.578974 위도                            33.44054 Name: 16701, dtype: object</div>`)[0];
+            popup_be17e93ecfef4350b713938646cb4b75.setContent(html_2eb290e76c614ce78c41646f4b40dc2b);
+        
+
+        marker_092c1dc3a3074fd29bad2c0be791744d.bindPopup(popup_be17e93ecfef4350b713938646cb4b75)
+        ;
+
+        
+    
+    
+            marker_092c1dc3a3074fd29bad2c0be791744d.bindTooltip(
+                `<div>
+                     824.1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b99d8fe0b06c4a0cb6f3ef0db8750eac = L.marker(
+                [33.4434592109597, 126.570161885234],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_85fc57ce4d014ffebe323db31a97710c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_948ba37bcb2e4706a5f11ca6773fbaec = $(`<div id="html_948ba37bcb2e4706a5f11ca6773fbaec" style="width: 100.0%; height: 100.0%;">상가업소번호                        25289650 상호명                            케이피디에너지 지점명                                NaN 상권업종대분류코드                            F 상권업종대분류명                         생활서비스 상권업종중분류코드                          F13 상권업종중분류명                        기타서비스업 상권업종소분류코드                       F13A01 상권업종소분류명                        사업경영상담 표준산업분류코드                        M71531 표준산업분류명                         경영컨설팅업 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011013600.0 법정동명                               영평동 지번코드               5011013600121900000 대지구분코드                               1 대지구분명                               대지 지번본번지                             2190 지번부번지                              NaN 지번주소              제주특별자치도 제주시 영평동 2190 도로명코드                     501104849196 도로명                  제주특별자치도 제주시 첨단로8길 건물본번지                               86 건물부번지                              2.0 건물관리번호       5011013600121900000000001 건물명                                NaN 도로명주소           제주특별자치도 제주시 첨단로8길 86-2 구우편번호                         690140.0 신우편번호                          63309.0 동정보                                NaN 층정보                                  1 호정보                                NaN 경도                          126.570162 위도                           33.443459 Name: 18495, dtype: object</div>`)[0];
+            popup_85fc57ce4d014ffebe323db31a97710c.setContent(html_948ba37bcb2e4706a5f11ca6773fbaec);
+        
+
+        marker_b99d8fe0b06c4a0cb6f3ef0db8750eac.bindPopup(popup_85fc57ce4d014ffebe323db31a97710c)
+        ;
+
+        
+    
+    
+            marker_b99d8fe0b06c4a0cb6f3ef0db8750eac.bindTooltip(
+                `<div>
+                     244.9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bec4dc53605e421cb092748ad042bfd8 = L.marker(
+                [33.4427617717759, 126.569882962532],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_ad14cbf0e9ee46e39d18272858f64a5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3d79a93fa1c43e19ec8557320456913 = $(`<div id="html_e3d79a93fa1c43e19ec8557320456913" style="width: 100.0%; height: 100.0%;">상가업소번호                        16038988 상호명                                에뜨드 지점명                                NaN 상권업종대분류코드                            Q 상권업종대분류명                            음식 상권업종중분류코드                          Q01 상권업종중분류명                            한식 상권업종소분류코드                       Q01A01 상권업종소분류명                     한식/백반/한정식 표준산업분류코드                        I56111 표준산업분류명                        한식 음식점업 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011013600.0 법정동명                               영평동 지번코드               5011013600122350000 대지구분코드                               1 대지구분명                               대지 지번본번지                             2235 지번부번지                              NaN 지번주소              제주특별자치도 제주시 영평동 2235 도로명코드                     501103020004 도로명                   제주특별자치도 제주시 516로 건물본번지                             2870 건물부번지                              NaN 건물관리번호       5011013600122350000048515 건물명                            제주국제대학교 도로명주소            제주특별자치도 제주시 516로 2870 구우편번호                         690714.0 신우편번호                          63309.0 동정보                                NaN 층정보                                NaN 호정보                                NaN 경도                          126.569883 위도                           33.442762 Name: 20227, dtype: object</div>`)[0];
+            popup_ad14cbf0e9ee46e39d18272858f64a5e.setContent(html_e3d79a93fa1c43e19ec8557320456913);
+        
+
+        marker_bec4dc53605e421cb092748ad042bfd8.bindPopup(popup_ad14cbf0e9ee46e39d18272858f64a5e)
+        ;
+
+        
+    
+    
+            marker_bec4dc53605e421cb092748ad042bfd8.bindTooltip(
+                `<div>
+                     169.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_526442b451aa4d118334832ebe37a2ad = L.marker(
+                [33.4491804536061, 126.572175996747],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_0f73fde54a544d56a59352687cf48239 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2fd70bb4818452ea08c0b49d26585eb = $(`<div id="html_a2fd70bb4818452ea08c0b49d26585eb" style="width: 100.0%; height: 100.0%;">상가업소번호                        27941056 상호명                               법인제농 지점명                                NaN 상권업종대분류코드                            D 상권업종대분류명                            소매 상권업종중분류코드                          D01 상권업종중분류명                       음/식료품소매 상권업종소분류코드                       D01A09 상권업종소분류명                         식자재판매 표준산업분류코드                        G47219 표준산업분류명                     기타 식료품 소매업 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011013600.0 법정동명                               영평동 지번코드               5011013600122300003 대지구분코드                               1 대지구분명                               대지 지번본번지                             2230 지번부번지                              3.0 지번주소            제주특별자치도 제주시 영평동 2230-3 도로명코드                     501104848841 도로명                  제주특별자치도 제주시 첨단로7길 건물본번지                                3 건물부번지                              NaN 건물관리번호       5011013600122300003000001 건물명                                NaN 도로명주소              제주특별자치도 제주시 첨단로7길 3 구우편번호                         690140.0 신우편번호                          63309.0 동정보                                NaN 층정보                                NaN 호정보                                NaN 경도                          126.572176 위도                            33.44918 Name: 24468, dtype: object</div>`)[0];
+            popup_0f73fde54a544d56a59352687cf48239.setContent(html_a2fd70bb4818452ea08c0b49d26585eb);
+        
+
+        marker_526442b451aa4d118334832ebe37a2ad.bindPopup(popup_0f73fde54a544d56a59352687cf48239)
+        ;
+
+        
+    
+    
+            marker_526442b451aa4d118334832ebe37a2ad.bindTooltip(
+                `<div>
+                     901.2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6fa0c39b04a8429cb3b281827cf51390 = L.marker(
+                [33.4427617717759, 126.569882962532],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_3c9d27a031ed4c68a3c62446c02f888d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8410830d323c465386e1f8c4b97edbc6 = $(`<div id="html_8410830d323c465386e1f8c4b97edbc6" style="width: 100.0%; height: 100.0%;">상가업소번호                        24757809 상호명                               포스프드 지점명                                NaN 상권업종대분류코드                            D 상권업종대분류명                            소매 상권업종중분류코드                          D03 상권업종중분류명                         종합소매점 상권업종소분류코드                       D03A01 상권업종소분류명                           편의점 표준산업분류코드                        G47122 표준산업분류명                        체인화 편의점 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011013600.0 법정동명                               영평동 지번코드               5011013600122350000 대지구분코드                               1 대지구분명                               대지 지번본번지                             2235 지번부번지                              NaN 지번주소              제주특별자치도 제주시 영평동 2235 도로명코드                     501103020004 도로명                   제주특별자치도 제주시 516로 건물본번지                             2870 건물부번지                              NaN 건물관리번호       5011013600122350000048515 건물명                                NaN 도로명주소            제주특별자치도 제주시 516로 2870 구우편번호                         690714.0 신우편번호                          63309.0 동정보                                NaN 층정보                                NaN 호정보                                NaN 경도                          126.569883 위도                           33.442762 Name: 26081, dtype: object</div>`)[0];
+            popup_3c9d27a031ed4c68a3c62446c02f888d.setContent(html_8410830d323c465386e1f8c4b97edbc6);
+        
+
+        marker_6fa0c39b04a8429cb3b281827cf51390.bindPopup(popup_3c9d27a031ed4c68a3c62446c02f888d)
+        ;
+
+        
+    
+    
+            marker_6fa0c39b04a8429cb3b281827cf51390.bindTooltip(
+                `<div>
+                     169.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d19bf7d0a1f46469726e7117479e1b2 = L.marker(
+                [33.4423296541204, 126.571503187749],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_6555c21cce294245b3c09553440eb8e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91c5f0f2d4644462b88e76b9b91d046d = $(`<div id="html_91c5f0f2d4644462b88e76b9b91d046d" style="width: 100.0%; height: 100.0%;">상가업소번호                        16398113 상호명                       제주국제자유도시개발센터 지점명                                NaN 상권업종대분류코드                            R 상권업종대분류명                         학문/교육 상권업종중분류코드                          R07 상권업종중분류명                     학원-예능취미체육 상권업종소분류코드                       R07A23 상권업종소분류명                           유도장 표준산업분류코드                        P85611 표준산업분류명                       스포츠 교육기관 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011013600.0 법정동명                               영평동 지번코드               5011013600121930000 대지구분코드                               1 대지구분명                               대지 지번본번지                             2193 지번부번지                              NaN 지번주소              제주특별자치도 제주시 영평동 2193 도로명코드                     501103349191 도로명                    제주특별자치도 제주시 첨단로 건물본번지                              330 건물부번지                              NaN 건물관리번호       5011013600121930000000001 건물명                              세미양빌딩 도로명주소              제주특별자치도 제주시 첨단로 330 구우편번호                         690140.0 신우편번호                          63309.0 동정보                                NaN 층정보                                NaN 호정보                                NaN 경도                          126.571503 위도                            33.44233 Name: 33604, dtype: object</div>`)[0];
+            popup_6555c21cce294245b3c09553440eb8e0.setContent(html_91c5f0f2d4644462b88e76b9b91d046d);
+        
+
+        marker_8d19bf7d0a1f46469726e7117479e1b2.bindPopup(popup_6555c21cce294245b3c09553440eb8e0)
+        ;
+
+        
+    
+    
+            marker_8d19bf7d0a1f46469726e7117479e1b2.bindTooltip(
+                `<div>
+                     174.3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa11097388cd41ccafcae9e3c087011c = L.marker(
+                [33.4427617717759, 126.569882962532],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_37f010e2ce6942f3ae0830fe65e7acc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfd98cc02f37431e8ce8da59d3319d1f = $(`<div id="html_bfd98cc02f37431e8ce8da59d3319d1f" style="width: 100.0%; height: 100.0%;">상가업소번호                        25257577 상호명                                 CU 지점명                              국제대학점 상권업종대분류코드                            D 상권업종대분류명                            소매 상권업종중분류코드                          D03 상권업종중분류명                         종합소매점 상권업종소분류코드                       D03A01 상권업종소분류명                           편의점 표준산업분류코드                        G47122 표준산업분류명                        체인화 편의점 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011013600.0 법정동명                               영평동 지번코드               5011013600122350000 대지구분코드                               1 대지구분명                               대지 지번본번지                             2235 지번부번지                              NaN 지번주소              제주특별자치도 제주시 영평동 2235 도로명코드                     501103020004 도로명                   제주특별자치도 제주시 516로 건물본번지                             2870 건물부번지                              NaN 건물관리번호       5011013600122350000048515 건물명                            제주국제대학교 도로명주소            제주특별자치도 제주시 516로 2870 구우편번호                         690714.0 신우편번호                          63309.0 동정보                                NaN 층정보                                NaN 호정보                                NaN 경도                          126.569883 위도                           33.442762 Name: 34564, dtype: object</div>`)[0];
+            popup_37f010e2ce6942f3ae0830fe65e7acc1.setContent(html_bfd98cc02f37431e8ce8da59d3319d1f);
+        
+
+        marker_aa11097388cd41ccafcae9e3c087011c.bindPopup(popup_37f010e2ce6942f3ae0830fe65e7acc1)
+        ;
+
+        
+    
+    
+            marker_aa11097388cd41ccafcae9e3c087011c.bindTooltip(
+                `<div>
+                     169.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82b65f436c114afea35e69aab7a1e458 = L.marker(
+                [33.4427617717759, 126.569882962532],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_5c055f26f2fc4fe5b7b52e7d5a35019a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6224727b46434754987a2833d2304581 = $(`<div id="html_6224727b46434754987a2833d2304581" style="width: 100.0%; height: 100.0%;">상가업소번호                        20235735 상호명                         제주국제대학교5호관 지점명                                NaN 상권업종대분류코드                            Q 상권업종대분류명                            음식 상권업종중분류코드                          Q14 상권업종중분류명                         기타음식업 상권업종소분류코드                       Q14A01 상권업종소분류명                   구내식당/자급식음식점 표준산업분류코드                        I56120 표준산업분류명                        기관구내식당업 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011013600.0 법정동명                               영평동 지번코드               5011013600122350000 대지구분코드                               1 대지구분명                               대지 지번본번지                             2235 지번부번지                              NaN 지번주소              제주특별자치도 제주시 영평동 2235 도로명코드                     501103020004 도로명                   제주특별자치도 제주시 516로 건물본번지                             2870 건물부번지                              NaN 건물관리번호       5011013600122350000048515 건물명                            제주국제대학교 도로명주소            제주특별자치도 제주시 516로 2870 구우편번호                         690714.0 신우편번호                          63309.0 동정보                                NaN 층정보                                 -1 호정보                                NaN 경도                          126.569883 위도                           33.442762 Name: 35144, dtype: object</div>`)[0];
+            popup_5c055f26f2fc4fe5b7b52e7d5a35019a.setContent(html_6224727b46434754987a2833d2304581);
+        
+
+        marker_82b65f436c114afea35e69aab7a1e458.bindPopup(popup_5c055f26f2fc4fe5b7b52e7d5a35019a)
+        ;
+
+        
+    
+    
+            marker_82b65f436c114afea35e69aab7a1e458.bindTooltip(
+                `<div>
+                     169.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_197af6bd402842c5bd9ab9e05d33d854 = L.marker(
+                [33.4463039419469, 126.561995401365],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_f4fca2d7efcc4ff89b901213b6d04522 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4762804970d4686ab070d3ff84f0d33 = $(`<div id="html_c4762804970d4686ab070d3ff84f0d33" style="width: 100.0%; height: 100.0%;">상가업소번호                        11162509 상호명                             제주하림유통 지점명                                NaN 상권업종대분류코드                            D 상권업종대분류명                            소매 상권업종중분류코드                          D03 상권업종중분류명                         종합소매점 상권업종소분류코드                       D03A06 상권업종소분류명                          종합소매 표준산업분류코드                        G47190 표준산업분류명                   그외 기타 종합 소매업 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011011700.0 법정동명                              아라일동 지번코드               5011011700103620036 대지구분코드                               1 대지구분명                               대지 지번본번지                              362 지번부번지                             36.0 지번주소           제주특별자치도 제주시 아라일동 362-36 도로명코드                     501104847814 도로명                  제주특별자치도 제주시 산천단남길 건물본번지                               36 건물부번지                              NaN 건물관리번호       5011011700103620036047891 건물명                                NaN 도로명주소             제주특별자치도 제주시 산천단남길 36 구우편번호                         690121.0 신우편번호                          63243.0 동정보                                NaN 층정보                                NaN 호정보                                NaN 경도                          126.561995 위도                           33.446304 Name: 36945, dtype: object</div>`)[0];
+            popup_f4fca2d7efcc4ff89b901213b6d04522.setContent(html_c4762804970d4686ab070d3ff84f0d33);
+        
+
+        marker_197af6bd402842c5bd9ab9e05d33d854.bindPopup(popup_f4fca2d7efcc4ff89b901213b6d04522)
+        ;
+
+        
+    
+    
+            marker_197af6bd402842c5bd9ab9e05d33d854.bindTooltip(
+                `<div>
+                     940.9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cfd17b316344d1785e09cc0969ef80c = L.marker(
+                [33.4448757487772, 126.56090049906],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_7fd4366e12cf4eff9eec3d691f7ec588 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1657492d72484017af5a8e90bf62d197 = $(`<div id="html_1657492d72484017af5a8e90bf62d197" style="width: 100.0%; height: 100.0%;">상가업소번호                        16582883 상호명                                 CU 지점명                             제주의료원점 상권업종대분류코드                            D 상권업종대분류명                            소매 상권업종중분류코드                          D03 상권업종중분류명                         종합소매점 상권업종소분류코드                       D03A01 상권업종소분류명                           편의점 표준산업분류코드                        G47122 표준산업분류명                        체인화 편의점 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011011700.0 법정동명                              아라일동 지번코드               5011011700100040017 대지구분코드                               1 대지구분명                               대지 지번본번지                                4 지번부번지                             17.0 지번주소             제주특별자치도 제주시 아라일동 4-17 도로명코드                     501104847814 도로명                  제주특별자치도 제주시 산천단남길 건물본번지                               10 건물부번지                              NaN 건물관리번호       5011011700100040017062762 건물명                              제주의료원 도로명주소             제주특별자치도 제주시 산천단남길 10 구우편번호                         690121.0 신우편번호                          63243.0 동정보                                NaN 층정보                                  2 호정보                                NaN 경도                            126.5609 위도                           33.444876 Name: 38253, dtype: object</div>`)[0];
+            popup_7fd4366e12cf4eff9eec3d691f7ec588.setContent(html_1657492d72484017af5a8e90bf62d197);
+        
+
+        marker_8cfd17b316344d1785e09cc0969ef80c.bindPopup(popup_7fd4366e12cf4eff9eec3d691f7ec588)
+        ;
+
+        
+    
+    
+            marker_8cfd17b316344d1785e09cc0969ef80c.bindTooltip(
+                `<div>
+                     946.6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d6a90cc988943e78a9081279fd9b06e = L.marker(
+                [33.4427617717759, 126.569882962532],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_fcca2345a1384ef9a72bc5fc011b58d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4478248711964b3a9d02fbe30b67254a = $(`<div id="html_4478248711964b3a9d02fbe30b67254a" style="width: 100.0%; height: 100.0%;">상가업소번호                        23950751 상호명                              포스하우징 지점명                               제주지점 상권업종대분류코드                            D 상권업종대분류명                            소매 상권업종중분류코드                          D03 상권업종중분류명                         종합소매점 상권업종소분류코드                       D03A01 상권업종소분류명                           편의점 표준산업분류코드                        G47122 표준산업분류명                        체인화 편의점 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011013600.0 법정동명                               영평동 지번코드               5011013600122350000 대지구분코드                               1 대지구분명                               대지 지번본번지                             2235 지번부번지                              NaN 지번주소              제주특별자치도 제주시 영평동 2235 도로명코드                     501103020004 도로명                   제주특별자치도 제주시 516로 건물본번지                             2870 건물부번지                              NaN 건물관리번호       5011013600122350000048515 건물명                                NaN 도로명주소            제주특별자치도 제주시 516로 2870 구우편번호                         690714.0 신우편번호                          63309.0 동정보                                NaN 층정보                                NaN 호정보                                NaN 경도                          126.569883 위도                           33.442762 Name: 39145, dtype: object</div>`)[0];
+            popup_fcca2345a1384ef9a72bc5fc011b58d4.setContent(html_4478248711964b3a9d02fbe30b67254a);
+        
+
+        marker_2d6a90cc988943e78a9081279fd9b06e.bindPopup(popup_fcca2345a1384ef9a72bc5fc011b58d4)
+        ;
+
+        
+    
+    
+            marker_2d6a90cc988943e78a9081279fd9b06e.bindTooltip(
+                `<div>
+                     169.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5058efa463f44d9293909481c6cf4c2c = L.marker(
+                [33.4427617717759, 126.569882962532],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_e6175152d50a4e2182890681e85668e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c631646daa04ae6a2128ba4ea2d4c8e = $(`<div id="html_2c631646daa04ae6a2128ba4ea2d4c8e" style="width: 100.0%; height: 100.0%;">상가업소번호                        24439220 상호명                                문구점 지점명                                NaN 상권업종대분류코드                            D 상권업종대분류명                            소매 상권업종중분류코드                          D08 상권업종중분류명                     사무/문구/컴퓨터 상권업종소분류코드                       D08A01 상권업종소분류명                       사무/문구용품 표준산업분류코드                        G47612 표준산업분류명                       문구용품 소매업 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011013600.0 법정동명                               영평동 지번코드               5011013600122350000 대지구분코드                               1 대지구분명                               대지 지번본번지                             2235 지번부번지                              NaN 지번주소              제주특별자치도 제주시 영평동 2235 도로명코드                     501103020004 도로명                   제주특별자치도 제주시 516로 건물본번지                             2870 건물부번지                              NaN 건물관리번호       5011013600122350000048515 건물명                                NaN 도로명주소            제주특별자치도 제주시 516로 2870 구우편번호                         690714.0 신우편번호                          63309.0 동정보                                NaN 층정보                                NaN 호정보                                NaN 경도                          126.569883 위도                           33.442762 Name: 39797, dtype: object</div>`)[0];
+            popup_e6175152d50a4e2182890681e85668e4.setContent(html_2c631646daa04ae6a2128ba4ea2d4c8e);
+        
+
+        marker_5058efa463f44d9293909481c6cf4c2c.bindPopup(popup_e6175152d50a4e2182890681e85668e4)
+        ;
+
+        
+    
+    
+            marker_5058efa463f44d9293909481c6cf4c2c.bindTooltip(
+                `<div>
+                     169.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_132ec859271e4a86b1b6ef3673a4862d = L.marker(
+                [33.4423296541204, 126.571503187749],
+                {}
+            ).addTo(marker_cluster_a44d42cec9f842e6848c6a5098e2e901);
+        
+    
+        var popup_bf9688c745754fa0b6698e107044474f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eebaf5ac78bd44089044dd4f78d2d460 = $(`<div id="html_eebaf5ac78bd44089044dd4f78d2d460" style="width: 100.0%; height: 100.0%;">상가업소번호                        17816835 상호명                              락모빌리티 지점명                                NaN 상권업종대분류코드                            F 상권업종대분류명                         생활서비스 상권업종중분류코드                          F14 상권업종중분류명                       자동차/이륜차 상권업종소분류코드                       F14A03 상권업종소분류명                     오토바이판매/수리 표준산업분류코드                           NaN 표준산업분류명                            NaN 시도코드                                50 시도명                            제주특별자치도 시군구코드                            50110 시군구명                               제주시 행정동코드                       5011063000 행정동명                               아라동 법정동코드                     5011013600.0 법정동명                               영평동 지번코드               5011013600121930000 대지구분코드                               1 대지구분명                               대지 지번본번지                             2193 지번부번지                              NaN 지번주소              제주특별자치도 제주시 영평동 2193 도로명코드                     501103349191 도로명                    제주특별자치도 제주시 첨단로 건물본번지                              330 건물부번지                              NaN 건물관리번호       5011013600121930000000001 건물명                              세미양빌딩 도로명주소              제주특별자치도 제주시 첨단로 330 구우편번호                         690140.0 신우편번호                          63309.0 동정보                                  S 층정보                                  2 호정보                                NaN 경도                          126.571503 위도                            33.44233 Name: 46081, dtype: object</div>`)[0];
+            popup_bf9688c745754fa0b6698e107044474f.setContent(html_eebaf5ac78bd44089044dd4f78d2d460);
+        
+
+        marker_132ec859271e4a86b1b6ef3673a4862d.bindPopup(popup_bf9688c745754fa0b6698e107044474f)
+        ;
+
+        
+    
+    
+            marker_132ec859271e4a86b1b6ef3673a4862d.bindTooltip(
+                `<div>
+                     174.3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

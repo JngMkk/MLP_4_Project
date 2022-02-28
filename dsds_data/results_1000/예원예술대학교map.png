@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3edde375bca14f38b4ecde09e6e67a54 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3edde375bca14f38b4ecde09e6e67a54" ></div>
+        
+</body>
+<script>    
+    
+            var map_3edde375bca14f38b4ecde09e6e67a54 = L.map(
+                "map_3edde375bca14f38b4ecde09e6e67a54",
+                {
+                    center: [35.646742709928965, 127.27037176440928],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8a70311cdad949bbbb9b4308fc9590c8 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3edde375bca14f38b4ecde09e6e67a54);
+        
+    
+            var circle_c8aa6beb4dfe4bc19dbd56e246024a4f = L.circle(
+                [35.646742709928965, 127.27037176440928],
+                {"bubblingMouseEvents": true, "color": "#eb9e34", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1500, "stroke": true, "weight": 3}
+            ).addTo(map_3edde375bca14f38b4ecde09e6e67a54);
+        
+    
+        var popup_8155d2557a944306b525a90b695a2d4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c05b7e879de841b6a7172f25b7f737ed = $(`<div id="html_c05b7e879de841b6a7172f25b7f737ed" style="width: 100.0%; height: 100.0%;">땀나실걸요?</div>`)[0];
+            popup_8155d2557a944306b525a90b695a2d4e.setContent(html_c05b7e879de841b6a7172f25b7f737ed);
+        
+
+        circle_c8aa6beb4dfe4bc19dbd56e246024a4f.bindPopup(popup_8155d2557a944306b525a90b695a2d4e)
+        ;
+
+        
+    
+    
+            circle_c8aa6beb4dfe4bc19dbd56e246024a4f.bindTooltip(
+                `<div>
+                     1.5km
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0bf70ec96abd405fa4c7676bc3d4c760 = L.circle(
+                [35.646742709928965, 127.27037176440928],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_3edde375bca14f38b4ecde09e6e67a54);
+        
+    
+        var popup_621a044dd0e34652af03523fbb51917e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c8c084d75654521a7d3009006131c4b = $(`<div id="html_1c8c084d75654521a7d3009006131c4b" style="width: 100.0%; height: 100.0%;">걸어갈 수 있습니다!!</div>`)[0];
+            popup_621a044dd0e34652af03523fbb51917e.setContent(html_1c8c084d75654521a7d3009006131c4b);
+        
+
+        circle_0bf70ec96abd405fa4c7676bc3d4c760.bindPopup(popup_621a044dd0e34652af03523fbb51917e)
+        ;
+
+        
+    
+    
+            circle_0bf70ec96abd405fa4c7676bc3d4c760.bindTooltip(
+                `<div>
+                     1km
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a397e8207e7f46b498f6141dac11cd73 = L.circle(
+                [35.646742709928965, 127.27037176440928],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_3edde375bca14f38b4ecde09e6e67a54);
+        
+    
+        var popup_0b0927a20562422bbad7286af549cf71 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40e603da1fc64993a63c0ae34be712eb = $(`<div id="html_40e603da1fc64993a63c0ae34be712eb" style="width: 100.0%; height: 100.0%;">모든 사업체를 확인하세요!</div>`)[0];
+            popup_0b0927a20562422bbad7286af549cf71.setContent(html_40e603da1fc64993a63c0ae34be712eb);
+        
+
+        circle_a397e8207e7f46b498f6141dac11cd73.bindPopup(popup_0b0927a20562422bbad7286af549cf71)
+        ;
+
+        
+    
+    
+            circle_a397e8207e7f46b498f6141dac11cd73.bindTooltip(
+                `<div>
+                     500m 이내
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_84af31000f414bc28dd2cf4efb832e62 = L.circleMarker(
+                [35.646742709928965, 127.27037176440928],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_3edde375bca14f38b4ecde09e6e67a54);
+        
+    
+        var popup_1937e92e65ae4d0382d60d2b34d98196 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42b2197f05324c07864c0683587fed8c = $(`<div id="html_42b2197f05324c07864c0683587fed8c" style="width: 100.0%; height: 100.0%;">예원예술대학교</div>`)[0];
+            popup_1937e92e65ae4d0382d60d2b34d98196.setContent(html_42b2197f05324c07864c0683587fed8c);
+        
+
+        circle_marker_84af31000f414bc28dd2cf4efb832e62.bindPopup(popup_1937e92e65ae4d0382d60d2b34d98196)
+        ;
+
+        
+    
+    
+            circle_marker_84af31000f414bc28dd2cf4efb832e62.bindTooltip(
+                `<div>
+                     예원예술대학교
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a7d0b2346e346ebaededab7c92c2b82 = L.marker(
+                [35.646742709928965, 127.27037176440928],
+                {}
+            ).addTo(map_3edde375bca14f38b4ecde09e6e67a54);
+        
+    
+            var marker_cluster_83fc827aad6b4a3c97f1191f44c19f0f = L.markerClusterGroup(
+                {}
+            );
+            map_3edde375bca14f38b4ecde09e6e67a54.addLayer(marker_cluster_83fc827aad6b4a3c97f1191f44c19f0f);
+        
+    
+            var marker_ac461974662e49ceb3c99dc6f1e12795 = L.marker(
+                [35.6482080148179, 127.271498596501],
+                {}
+            ).addTo(marker_cluster_83fc827aad6b4a3c97f1191f44c19f0f);
+        
+    
+        var popup_65f485a69b8c4869a9449b2d7f34b24c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25bbe10e1ed6472dad1b8f7b70f0da0f = $(`<div id="html_25bbe10e1ed6472dad1b8f7b70f0da0f" style="width: 100.0%; height: 100.0%;">상가업소번호                        23758159 상호명                               할매국수 지점명                                NaN 상권업종대분류코드                            Q 상권업종대분류명                            음식 상권업종중분류코드                          Q04 상권업종중분류명                            분식 상권업종소분류코드                       Q04A02 상권업종소분류명                     국수/만두/칼국수 표준산업분류코드                        I56194 표준산업분류명                    분식 및 김밥 전문점 시도코드                                45 시도명                               전라북도 시군구코드                            45750 시군구명                               임실군 행정동코드                       4575033000 행정동명                               신평면 법정동코드                     4575033021.0 법정동명                               신평면 지번코드               4575033021102430005 대지구분코드                               1 대지구분명                               대지 지번본번지                              243 지번부번지                              5.0 지번주소            전라북도 임실군 신평면 창인리 243-5 도로명코드                     457503277032 도로명                   전라북도 임실군 신평면 창인로 건물본번지                              118 건물부번지                              NaN 건물관리번호       4575033021102430005117044 건물명                                NaN 도로명주소             전라북도 임실군 신평면 창인로 118 구우편번호                         566822.0 신우편번호                          55913.0 동정보                                NaN 층정보                                NaN 호정보                                NaN 경도                          127.271499 위도                           35.648208 Name: 1259, dtype: object</div>`)[0];
+            popup_65f485a69b8c4869a9449b2d7f34b24c.setContent(html_25bbe10e1ed6472dad1b8f7b70f0da0f);
+        
+
+        marker_ac461974662e49ceb3c99dc6f1e12795.bindPopup(popup_65f485a69b8c4869a9449b2d7f34b24c)
+        ;
+
+        
+    
+    
+            marker_ac461974662e49ceb3c99dc6f1e12795.bindTooltip(
+                `<div>
+                     192.1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2921444c79f64d18ab873ed29704292e = L.marker(
+                [35.6478768639168, 127.270397322438],
+                {}
+            ).addTo(marker_cluster_83fc827aad6b4a3c97f1191f44c19f0f);
+        
+    
+        var popup_18dd381b37894deb937f2fa283846e4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b039352283a847d9b1ccd4959849e29f = $(`<div id="html_b039352283a847d9b1ccd4959849e29f" style="width: 100.0%; height: 100.0%;">상가업소번호                        25728258 상호명                              한우리슈퍼 지점명                                NaN 상권업종대분류코드                            D 상권업종대분류명                            소매 상권업종중분류코드                          D03 상권업종중분류명                         종합소매점 상권업종소분류코드                       D03A02 상권업종소분류명                          수퍼마켓 표준산업분류코드                        G47121 표준산업분류명                           슈퍼마켓 시도코드                                45 시도명                               전라북도 시군구코드                            45750 시군구명                               임실군 행정동코드                       4575033000 행정동명                               신평면 법정동코드                     4575033021.0 법정동명                               신평면 지번코드               4575033021102540000 대지구분코드                               1 대지구분명                               대지 지번본번지                              254 지번부번지                              NaN 지번주소              전라북도 임실군 신평면 창인리 254 도로명코드                     457503277032 도로명                   전라북도 임실군 신평면 창인로 건물본번지                              129 건물부번지                              NaN 건물관리번호       4575033021102540000116757 건물명                              한우리슈퍼 도로명주소             전라북도 임실군 신평면 창인로 129 구우편번호                         566822.0 신우편번호                          55913.0 동정보                                NaN 층정보                                NaN 호정보                                NaN 경도                          127.270397 위도                           35.647877 Name: 25607, dtype: object</div>`)[0];
+            popup_18dd381b37894deb937f2fa283846e4b.setContent(html_b039352283a847d9b1ccd4959849e29f);
+        
+
+        marker_2921444c79f64d18ab873ed29704292e.bindPopup(popup_18dd381b37894deb937f2fa283846e4b)
+        ;
+
+        
+    
+    
+            marker_2921444c79f64d18ab873ed29704292e.bindTooltip(
+                `<div>
+                     126.1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
