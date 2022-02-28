@@ -3,7 +3,7 @@ import requests
 def apartment(university, radius):
     global uni_lst, x, y
     url = 'https://dapi.kakao.com/v2/local/search/keyword.json'
-    headers = {"Authorization" : "KakaoAK e888bb19dc37d394e91822fbef88d445"}
+    headers = {"Authorization" : "KakaoAK "}
     index = uni_lst.index(university)
     params = {'query': '주거시설', 'x': x[index], 'y': y[index], 'radius': radius}
     res = requests.get(url, params=params, headers=headers).json()['documents']
