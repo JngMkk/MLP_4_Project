@@ -54,3 +54,27 @@ def signup(request):
 def logout(request):
     auth.logout(request)
     return redirect('/')
+
+def front_data(request):
+    return render(request, 'front_data.html')
+
+def example(request):
+    return render(request, 'example.html')
+
+def gangwon(request):
+    return render(request, 'gangwon.html')
+
+def geumgang(request):
+    return render(request, 'geumgang.html')
+
+def daeduk(request):
+    return render(request, 'daeduk.html')
+
+def duwon(request):
+    return render(request, 'duwon.html')
+
+def youngnam(request):
+    return render(request, 'youngnam.html')
+
+def jeju(request):
+    return render(request, 'jeju.html')

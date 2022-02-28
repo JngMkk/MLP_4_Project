@@ -114,27 +114,13 @@
             padding : 10px;
             bottom: 0%;
             background-color: rgb(39, 55, 69);
+            width: 100%;
         }
         #footer> #copyright{
             display: flex;
             justify-content: column;
         }
-
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-
-        #title {
-            padding-left: 20px;
-            margin-top: 10px;
-        }
-        #sub-title {
-            padding-left: 30px;
-        }
-
-
-
+    
     </style>
 
 </head>
@@ -178,14 +164,10 @@
         </div>
     </div>
 
-    <h1 id="title">6성급 호텔</h1>
-    <br>
-    <h2 id="sub-title">폐교위기대학의 분석 및 활용방안 도출</h2>
-    <div class="grid">
-        <div><img src="{% static '폐교예시1.jpg' %}"></div>
-        <div><img src="{% static '폐교예시2.jpg' %}"></div>
-        <div><img src="{% static '폐교예시3.jpg' %}"></div>
-    </div>
+    {% block contents %}
+
+    {% endblock %}
+
 <!--    <div id="main">main-->
 
 

@@ -1,0 +1,114 @@
+
+/**{*/
+/*    margin: 0px;*/
+/*    padding: 0px;*/
+/*}*/
+
+/*a{  color: white;*/
+/*    text-decoration-line: none;*/
+/*}*/
+/*a:visited{*/
+/*    color : none;*/
+/*}*/
+/*a:hover{*/
+/*    font-weight: bold;*/
+/*}*/
+/*#groupName > span{*/
+/*    color : rgb(126, 105, 85);*/
+/*    font-weight: bold;*/
+/*    font-size : 20px;*/
+/*}*/
+/*li {*/
+/*    list-style-type: none;*/
+/*    margin: 1%;*/
+/*}*/
+/*#supSection {*/
+/*    max-width:100%;*/
+/*    padding-left : 25px;*/
+/*    height: 35px;*/
+/*    display: flex;*/
+/*    align-items : center;*/
+/*    justify-content: space-between;*/
+/*    background-color :rgb(236, 234, 230);*/
+/*}*/
+
+/*#subSection {*/
+/*    padding-left : 5%;*/
+/*    padding-right : 5%;*/
+/*    background-color : rgb(126, 105, 85);*/
+/*}*/
+/*#subSection a {*/
+/*    color : rgb(193, 177, 160);*/
+/*}*/
+/*#logLst_auth {*/
+/*    height: 100%;*/
+/*    width: 33%;*/
+/*    overflow: hidden;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    background-color : rgb(162, 154, 145);*/
+/*}*/
+/*#logLst_auth li{*/
+/*    margin: 30px;*/
+/*    max-width: 100%;*/
+/*}*/
+
+
+/*#logLst_notAuth {*/
+/*    height: 100%;*/
+/*    width: 33%;*/
+/*    overflow: hidden;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    background-color : rgb(162, 154, 145);*/
+/*}*/
+/*#logLst_notAuth li{*/
+/*    margin: 30px;*/
+/*    max-width: 100%;*/
+/*}*/
+
+
+/*#menuLst {*/
+/*    width : 100%;*/
+/*    overflow: hidden;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+
+
+/*#main {*/
+/*    height: 1200px;*/
+/*}*/
+
+/*#main {*/
+/*    padding: 3%;*/
+/*}*/
+/*#mainContent{*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+/*.content {*/
+/*    height : 300px;*/
+/*    border : 1px solid black;*/
+/*    width: 30%;*/
+/*}*/
+/*.content ul{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
+
+
+/*#footer {*/
+/*    color: white;*/
+/*    padding : 10px;*/
+/*    bottom: 0%;*/
+/*    background-color: rgb(39, 55, 69);*/
+/*}*/
+/*#footer> #copyright{*/
+/*    display: flex;*/
+/*    justify-content: column;*/
+/*}*/
+

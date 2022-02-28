@@ -30,6 +30,14 @@ urlpatterns = [
     path('signup/', views.signup, name='signup'),
     path('logout/', views.logout, name='logout'),
     path('pybo1/', include('pybo1.urls')),
+    path('front_data/', views.front_data, name='front_data'),
+    path('gangwon/', views.gangwon, name='gangwon'),
+    path('example/', views.example, name='example'),
+    path('geumgang/', views.geumgang, name='geumgang'),
+    path('daeduk/', views.daeduk, name='daeduk'),
+    path('duwon/', views.duwon, name='duwon'),
+    path('youngnam/', views.youngnam, name='youngnam'),
+    path('jeju/', views.jeju, name='jeju'),
 ]
 
 

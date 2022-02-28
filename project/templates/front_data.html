@@ -1,0 +1,48 @@
+{% extends 'index_base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+{% block contents %}
+    <style>
+        .first_grid {
+            display: block;
+            width: 100%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /*width: 100%;*/
+        }
+
+        #grid-2-2 > img {
+            width: 800px;
+            height: 400px;
+        }
+        #grid-2-1 > img {
+            width: 800px;
+            height: 600px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="first_grid">
+        <img src="{% static 'front_data/인구소멸지역.png' %}">
+    </div>
+    <div class="grid">
+        <div id="grid-1-1"><img src="{% static 'front_data/인구소멸지역빨강.png' %}"></div>
+        <div id="grid-1-2"><img src="{% static 'front_data/인구소멸지역지도.png' %}"></div>
+    </div>
+    <div class="grid">
+        <div id="grid-2-1"><img src="{% static 'front_data/학령인구감소.png' %}"></div>
+        <div id="grid-2-2"><img src="{% static 'front_data/충원율미달.png' %}"></div>
+    </div>
+{% endblock %}
+
+</body>
+</html>

@@ -9,7 +9,7 @@
     <style type="text/css">
         *{
             margin: 0px;
-            padding: 0px; 
+            padding: 0px;
         }
 
         a{  color: white;
@@ -85,12 +85,12 @@
             justify-content: space-between;
         }
 
-        
+
 
         #main {
             height: 1200px;
         }
-        
+
         #main {
             padding: 3%;
         }
@@ -114,6 +114,7 @@
             padding : 10px;
             bottom: 0%;
             background-color: rgb(39, 55, 69);
+            width: 100%;
         }
         #footer> #copyright{
             display: flex;
@@ -122,19 +123,17 @@
 
         .grid {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            /*width: 100%;*/
         }
-
-        #title {
-            padding-left: 20px;
-            margin-top: 10px;
+        .grid_img {
+            width: 900px;
+            height: 360px;
         }
-        #sub-title {
-            padding-left: 30px;
+        #grid-2-2 > img {
+            width: 600px;
+            height: 596.52px;
         }
-
-
-
     </style>
 
 </head>
@@ -178,14 +177,15 @@
         </div>
     </div>
 
-    <h1 id="title">6성급 호텔</h1>
-    <br>
-    <h2 id="sub-title">폐교위기대학의 분석 및 활용방안 도출</h2>
     <div class="grid">
-        <div><img src="{% static '폐교예시1.jpg' %}"></div>
-        <div><img src="{% static '폐교예시2.jpg' %}"></div>
-        <div><img src="{% static '폐교예시3.jpg' %}"></div>
+        <div id="grid-1-1"><img src="{% static 'dataAnalysis/예시_정상치.png' %}" class="grid_img"></div>
+        <div id="grid-1-2"><img src="{% static 'dataAnalysis/예시_이상치.png' %}" class="grid_img"></div>
     </div>
+    <div class="grid">
+        <div id="grid-2-1"><img src="{% static 'dataAnalysis/예시_지도.png' %}"></div>
+        <div id="grid-2-2"><img src="{% static 'dataAnalysis/예시_파이.png' %}"></div>
+    </div>
+
 <!--    <div id="main">main-->
 
 
