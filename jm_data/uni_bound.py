@@ -16,7 +16,7 @@ def search(university, radius):
     global uni_lst, x, y
     index = uni_lst.index(university)
     url = 'https://dapi.kakao.com/v2/local/search/category.json'
-    headers = {"Authorization" : "KakaoAK e888bb19dc37d394e91822fbef88d445"}
+    headers = {"Authorization" : "KakaoAK "}
     distance = []
     addr = []
     name = []
