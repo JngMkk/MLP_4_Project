@@ -6,7 +6,7 @@
   - 데이터 엔지니어: 강중모(팀장), 정진한
   - 데이터 사이언티스트: 윤지현, 홍동수, 이상동
 
-- 프로젝트에 활용된 기술: Python(Selenium, Beautifulsoup, Pandas, Numpy, Haversine, Folium, Matplotlib, Wordcloud, Scikit-learn), Github
+- 프로젝트에 활용된 기술: Python(Selenium, Beautifulsoup, Pandas, Numpy, Haversine, Folium, Matplotlib, Wordcloud, Scikit-learn), HTML, CSS, Javascript, Github
 
 
 
